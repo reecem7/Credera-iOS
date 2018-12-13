@@ -1,0 +1,7 @@
+platform :ios, '8.0'
+
+# You need to set target when you use CocoaPods 1.0.0 or later.
+target 'Credera-iOS' do
+  use_frameworks!
+  pod 'CocoaLumberjack/Swift', '3.4.2'
+end
