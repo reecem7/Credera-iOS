@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C4D6B3DE27C746F5B67A025 /* Pods_Credera_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6428362F40383B253C816DD2 /* Pods_Credera_iOSUITests.framework */; };
+		3E617F5366241A675C34EAF3 /* Pods_Credera_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776C2608FC32935341C444AC /* Pods_Credera_iOSTests.framework */; };
 		5949D1AD219CBBAC006D2FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949D1AC219CBBAC006D2FF0 /* AppDelegate.swift */; };
 		5949D1AF219CBBAC006D2FF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949D1AE219CBBAC006D2FF0 /* ViewController.swift */; };
 		5949D1B2219CBBAC006D2FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5949D1B0219CBBAC006D2FF0 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		5949D1BA219CBBAE006D2FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5949D1B8219CBBAE006D2FF0 /* LaunchScreen.storyboard */; };
 		5949D1C5219CBBAE006D2FF0 /* Credera_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949D1C4219CBBAE006D2FF0 /* Credera_iOSTests.swift */; };
 		5949D1D0219CBBAF006D2FF0 /* Credera_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949D1CF219CBBAF006D2FF0 /* Credera_iOSUITests.swift */; };
+		D802FBAAD7A03585ABEB5D15 /* Pods_Credera_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9645AC57AFCE99B609B68B96 /* Pods_Credera_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,15 @@
 		5949D1CB219CBBAF006D2FF0 /* Credera-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Credera-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5949D1CF219CBBAF006D2FF0 /* Credera_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credera_iOSUITests.swift; sourceTree = "<group>"; };
 		5949D1D1219CBBAF006D2FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6428362F40383B253C816DD2 /* Pods_Credera_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credera_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72DC0B99DC63737EEAD05695 /* Pods-Credera-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSTests/Pods-Credera-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		776C2608FC32935341C444AC /* Pods_Credera_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credera_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DE5EA2F7E2553C34C0ED366 /* Pods-Credera-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOS/Pods-Credera-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		9645AC57AFCE99B609B68B96 /* Pods_Credera_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credera_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A550CE8A5977D50EB3D4A187 /* Pods-Credera-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOS/Pods-Credera-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B099B06EF8A37A1DC08D3C01 /* Pods-Credera-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSUITests/Pods-Credera-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CE79981894AA99E25E018793 /* Pods-Credera-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSTests/Pods-Credera-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF250F3FCF3A682573AA52AA /* Pods-Credera-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSUITests/Pods-Credera-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D802FBAAD7A03585ABEB5D15 /* Pods_Credera_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E617F5366241A675C34EAF3 /* Pods_Credera_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C4D6B3DE27C746F5B67A025 /* Pods_Credera_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				5949D1C3219CBBAE006D2FF0 /* Credera-iOSTests */,
 				5949D1CE219CBBAF006D2FF0 /* Credera-iOSUITests */,
 				5949D1AA219CBBAC006D2FF0 /* Products */,
+				B1358001C96A900BEA8211A1 /* Pods */,
+				6BFBF04996A1B3B319DFE4DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,6 +230,29 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		6BFBF04996A1B3B319DFE4DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9645AC57AFCE99B609B68B96 /* Pods_Credera_iOS.framework */,
+				776C2608FC32935341C444AC /* Pods_Credera_iOSTests.framework */,
+				6428362F40383B253C816DD2 /* Pods_Credera_iOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1358001C96A900BEA8211A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A550CE8A5977D50EB3D4A187 /* Pods-Credera-iOS.debug.xcconfig */,
+				7DE5EA2F7E2553C34C0ED366 /* Pods-Credera-iOS.release.xcconfig */,
+				CE79981894AA99E25E018793 /* Pods-Credera-iOSTests.debug.xcconfig */,
+				72DC0B99DC63737EEAD05695 /* Pods-Credera-iOSTests.release.xcconfig */,
+				FF250F3FCF3A682573AA52AA /* Pods-Credera-iOSUITests.debug.xcconfig */,
+				B099B06EF8A37A1DC08D3C01 /* Pods-Credera-iOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5949D1D4219CBBAF006D2FF0 /* Build configuration list for PBXNativeTarget "Credera-iOS" */;
 			buildPhases = (
+				A1A5965FA2FB6D51133D796E /* [CP] Check Pods Manifest.lock */,
 				5949D1A5219CBBAC006D2FF0 /* Sources */,
 				5949D1A6219CBBAC006D2FF0 /* Frameworks */,
 				5949D1A7219CBBAC006D2FF0 /* Resources */,
+				687722288D96D9D5B8CD80FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,6 +279,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5949D1D7219CBBAF006D2FF0 /* Build configuration list for PBXNativeTarget "Credera-iOSTests" */;
 			buildPhases = (
+				6E47CAF03C248FD9B6EFE3C6 /* [CP] Check Pods Manifest.lock */,
 				5949D1BC219CBBAE006D2FF0 /* Sources */,
 				5949D1BD219CBBAE006D2FF0 /* Frameworks */,
 				5949D1BE219CBBAE006D2FF0 /* Resources */,
@@ -255,6 +298,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5949D1DA219CBBAF006D2FF0 /* Build configuration list for PBXNativeTarget "Credera-iOSUITests" */;
 			buildPhases = (
+				4316E69E40C1CE14E99108F4 /* [CP] Check Pods Manifest.lock */,
 				5949D1C7219CBBAF006D2FF0 /* Sources */,
 				5949D1C8219CBBAF006D2FF0 /* Frameworks */,
 				5949D1C9219CBBAF006D2FF0 /* Resources */,
@@ -338,6 +382,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4316E69E40C1CE14E99108F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Credera-iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		687722288D96D9D5B8CD80FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Credera-iOS/Pods-Credera-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Credera-iOS/Pods-Credera-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E47CAF03C248FD9B6EFE3C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Credera-iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1A5965FA2FB6D51133D796E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Credera-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5949D1A5219CBBAC006D2FF0 /* Sources */ = {
@@ -518,6 +637,7 @@
 		};
 		5949D1D5219CBBAF006D2FF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A550CE8A5977D50EB3D4A187 /* Pods-Credera-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +656,7 @@
 		};
 		5949D1D6219CBBAF006D2FF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DE5EA2F7E2553C34C0ED366 /* Pods-Credera-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -554,6 +675,7 @@
 		};
 		5949D1D8219CBBAF006D2FF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE79981894AA99E25E018793 /* Pods-Credera-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -575,6 +697,7 @@
 		};
 		5949D1D9219CBBAF006D2FF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72DC0B99DC63737EEAD05695 /* Pods-Credera-iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -596,6 +719,7 @@
 		};
 		5949D1DB219CBBAF006D2FF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF250F3FCF3A682573AA52AA /* Pods-Credera-iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -616,6 +740,7 @@
 		};
 		5949D1DC219CBBAF006D2FF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B099B06EF8A37A1DC08D3C01 /* Pods-Credera-iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
