@@ -11,11 +11,18 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
+    @IBOutlet weak var dependencyLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationItem.titleView = AppHeaderView()
         
+        setupUI()
+        
     }
     
+
+    public func setupUI(){
+        dependencyLabel.text = DependencyManager.shared.MainPageManager.mainPageText
+    }
 }
