@@ -28,6 +28,7 @@
 		5949D1BA219CBBAE006D2FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5949D1B8219CBBAE006D2FF0 /* LaunchScreen.storyboard */; };
 		5949D1C5219CBBAE006D2FF0 /* Credera_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949D1C4219CBBAE006D2FF0 /* Credera_iOSTests.swift */; };
 		5949D1D0219CBBAF006D2FF0 /* Credera_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949D1CF219CBBAF006D2FF0 /* Credera_iOSUITests.swift */; };
+		AFC0D3B021EBDE790041C6F2 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0D3AF21EBDE790041C6F2 /* DependencyManager.swift */; };
 		D802FBAAD7A03585ABEB5D15 /* Pods_Credera_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9645AC57AFCE99B609B68B96 /* Pods_Credera_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		7DE5EA2F7E2553C34C0ED366 /* Pods-Credera-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOS/Pods-Credera-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		9645AC57AFCE99B609B68B96 /* Pods_Credera_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credera_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A550CE8A5977D50EB3D4A187 /* Pods-Credera-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOS/Pods-Credera-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		AFC0D3AF21EBDE790041C6F2 /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = SOURCE_ROOT; };
 		B099B06EF8A37A1DC08D3C01 /* Pods-Credera-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSUITests/Pods-Credera-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CE79981894AA99E25E018793 /* Pods-Credera-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSTests/Pods-Credera-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FF250F3FCF3A682573AA52AA /* Pods-Credera-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSUITests/Pods-Credera-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		5910781721DD209C0017CA21 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				AFC0D3AF21EBDE790041C6F2 /* DependencyManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 				5949D1AD219CBBAC006D2FF0 /* AppDelegate.swift in Sources */,
 				5910783A21DD2BD80017CA21 /* SecondViewController.swift in Sources */,
 				5910783221DD29E00017CA21 /* UIColor+Extension.swift in Sources */,
+				AFC0D3B021EBDE790041C6F2 /* DependencyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
