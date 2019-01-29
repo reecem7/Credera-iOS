@@ -10,24 +10,61 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Search Results View Controller-->
         <scene sceneID="TBn-x7-fnL">
             <objects>
-                <viewController id="fkA-JY-RAT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchResultsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fkA-JY-RAT" customClass="SearchResultsViewController" customModule="Credera_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o8i-3s-Nzm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="7iY-GN-MB8">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="7iY-GN-MB8">
                                 <rect key="frame" x="177" y="323" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcC-fw-y6N">
+                                <rect key="frame" x="16" y="617" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Search Again"/>
+                                <connections>
+                                    <action selector="onSearchButtonClicked:" destination="fkA-JY-RAT" eventType="touchUpInside" id="E0F-yD-wFO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Searching for:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhQ-u9-Y45">
+                                <rect key="frame" x="136" y="255" width="107" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98Q-8S-JxJ">
+                                <rect key="frame" x="16" y="284" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Search Term"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGT-B0-ruK">
+                                <rect key="frame" x="294" y="617" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go Home"/>
+                                <connections>
+                                    <action selector="onHomeButtonClicked:" destination="fkA-JY-RAT" eventType="touchUpInside" id="KwE-XX-MMX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7iY-GN-MB8" firstAttribute="leading" secondItem="1t5-w4-dDd" secondAttribute="leading" constant="177" id="4Fd-Kx-NIS"/>
+                            <constraint firstItem="1t5-w4-dDd" firstAttribute="trailing" secondItem="7iY-GN-MB8" secondAttribute="trailing" constant="178" id="koW-js-53y"/>
+                            <constraint firstItem="1t5-w4-dDd" firstAttribute="bottom" secondItem="7iY-GN-MB8" secondAttribute="bottom" constant="324" id="yyP-JI-mcg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1t5-w4-dDd"/>
                     </view>
                     <connections>
+                        <outlet property="loadingIndicator" destination="7iY-GN-MB8" id="Vzp-Ya-3rd"/>
                         <outlet property="searchDisplayController" destination="Roc-gJ-1Hz" id="5Wp-nc-yMv"/>
+                        <outlet property="searchTermLabel" destination="98Q-8S-JxJ" id="Ea0-2j-sJF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ev-dw-OVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -40,7 +77,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-106" y="-282"/>
+            <point key="canvasLocation" x="-106.40000000000001" y="-282.00899550224892"/>
         </scene>
     </scenes>
 </document>

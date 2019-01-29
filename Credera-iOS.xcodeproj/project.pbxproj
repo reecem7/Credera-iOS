@@ -30,6 +30,8 @@
 		AF62979821EBFF6800E2EDD2 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62979721EBFF6800E2EDD2 /* HomeCoordinator.swift */; };
 		AF62979A21EC0C0900E2EDD2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62979921EC0C0900E2EDD2 /* Coordinator.swift */; };
 		AF62979C21ED819E00E2EDD2 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62979B21ED819E00E2EDD2 /* SearchCoordinator.swift */; };
+		AFE2D10021FF9AF500399047 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2D0FF21FF9AF500399047 /* SearchResultsViewController.swift */; };
+		AFE2D10321FFB8F800399047 /* SearchQueryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2D10221FFB8F800399047 /* SearchQueryViewModel.swift */; };
 		D802FBAAD7A03585ABEB5D15 /* Pods_Credera_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9645AC57AFCE99B609B68B96 /* Pods_Credera_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +86,8 @@
 		AF62979721EBFF6800E2EDD2 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		AF62979921EC0C0900E2EDD2 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		AF62979B21ED819E00E2EDD2 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		AFE2D0FF21FF9AF500399047 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		AFE2D10221FFB8F800399047 /* SearchQueryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchQueryViewModel.swift; sourceTree = "<group>"; };
 		B099B06EF8A37A1DC08D3C01 /* Pods-Credera-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSUITests/Pods-Credera-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CE79981894AA99E25E018793 /* Pods-Credera-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSTests/Pods-Credera-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FF250F3FCF3A682573AA52AA /* Pods-Credera-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSUITests/Pods-Credera-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				5910783921DD2BD80017CA21 /* SearchViewController.swift */,
+				AFE2D0FF21FF9AF500399047 /* SearchResultsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -341,9 +346,18 @@
 		AF62979621EBFF0900E2EDD2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				AFE2D10121FFB8D400399047 /* ViewModels */,
 				AF62979521EBFED200E2EDD2 /* Coordinators */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		AFE2D10121FFB8D400399047 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AFE2D10221FFB8F800399047 /* SearchQueryViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		B1358001C96A900BEA8211A1 /* Pods */ = {
@@ -574,11 +588,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5910783521DD2AC40017CA21 /* HomeViewController.swift in Sources */,
+				AFE2D10021FF9AF500399047 /* SearchResultsViewController.swift in Sources */,
 				5910782A21DD28A40017CA21 /* AppHeaderView.swift in Sources */,
 				AF62979821EBFF6800E2EDD2 /* HomeCoordinator.swift in Sources */,
 				5910782321DD252A0017CA21 /* MainTabBarAppViewController.swift in Sources */,
 				AF62979C21ED819E00E2EDD2 /* SearchCoordinator.swift in Sources */,
 				5910781B21DD21900017CA21 /* NavigationController+Transitions.swift in Sources */,
+				AFE2D10321FFB8F800399047 /* SearchQueryViewModel.swift in Sources */,
 				5910783021DD299F0017CA21 /* Constants.swift in Sources */,
 				5910782E21DD29410017CA21 /* XibView.swift in Sources */,
 				AF62979A21EC0C0900E2EDD2 /* Coordinator.swift in Sources */,

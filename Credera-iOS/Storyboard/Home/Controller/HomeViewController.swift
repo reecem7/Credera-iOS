@@ -22,7 +22,7 @@ class HomeViewController: UIViewController {
         self.navigationItem.titleView = AppHeaderView()
     }
     
-    @IBAction func goToSearchPageAction(_ sender: UIButton) {
+    @IBAction func onSearchButtonClicked(_ sender: UIButton) {
         self.delegate?.navigateToSearchPage()
     }
     

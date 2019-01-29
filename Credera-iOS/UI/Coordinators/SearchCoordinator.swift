@@ -31,17 +31,33 @@ class SearchCoordinator: Coordinator {
 
 extension SearchCoordinator : SearchViewControllerDelegate {
     
-    // Navigate to Search page
+    // Navigate to Home page
     func navigateToHomePage() {
-        self.delegate?.navigateToHomePage()
+        self.navigationController.popToRootViewController(animated: true)
     }
     
     // Navigate to Search Results page
-    func navigateToSearchResultsPage() {
-//        let thirdViewController : ThirdViewController = ThirdViewController()
-//        thirdViewController.delegate = self
-//
-//        self.navigationController.pushViewController(thirdViewController, animated: true)
+    func navigateToSearchResultsPage(searchQuery: String?) {
+        
+        // Create a view model with data to pass to the Search Results page
+        let data = SearchQueryViewModel(searchQuery: searchQuery)
+        
+        // Initialize Storyboard and ViewController
+        let storyboard = UIStoryboard(name: "SearchResults", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "SearchResultsViewController") as! SearchResultsViewController
+        
+        viewController.delegate = self
+        viewController.viewModel = data
+        
+        // Push ViewController on to the stack
+        self.navigationController.pushViewController(viewController, animated: true)
     }
+}
 
+extension SearchCoordinator : SearchResultsViewControllerDelegate {
+    
+    // Navigate to Search page
+    func navigateToSearchPage() {
+        self.navigationController.popViewController(animated: true)
+    }
 }

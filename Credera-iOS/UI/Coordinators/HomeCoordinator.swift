@@ -28,7 +28,7 @@ class HomeCoordinator: Coordinator {
 
 extension HomeCoordinator: HomeViewControllerDelegate {
 
-    // Navigate to next page
+    // Navigate to Search page
     func navigateToSearchPage() {
         let searchCoordinator = SearchCoordinator(navigationController: navigationController)
         searchCoordinator.delegate = self as? SearchViewControllerDelegate
@@ -37,12 +37,3 @@ extension HomeCoordinator: HomeViewControllerDelegate {
         searchCoordinator.start()
     }
 }
-
-//extension FirstCoordinator: BackToFirstViewControllerDelegate {
-//
-//    // Back from third page
-//    func navigateBackToFirstPage(newOrderCoordinator: SecondCoordinator) {
-//        navigationController.popToRootViewController(animated: true)
-//        childCoordinators.removeLast()
-//    }
-//}
