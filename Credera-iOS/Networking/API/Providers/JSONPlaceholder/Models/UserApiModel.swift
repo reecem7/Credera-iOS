@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct UserApiModel: Decodable {
+struct UserApiModel: Codable {
     let id: Int?
     let name: String?
     let username: String?

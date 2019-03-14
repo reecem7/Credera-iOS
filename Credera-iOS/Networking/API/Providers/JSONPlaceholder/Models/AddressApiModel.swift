@@ -8,15 +8,10 @@
 
 import Foundation
 
-struct AddressApiModel: Decodable {
+struct AddressApiModel: Codable {
     let street: String?
     let suite: String?
     let city: String?
     let zipcode: String?
     let geo: GeoApiModel?
-}
-
-struct GeoApiModel: Decodable {
-    let lat: String?
-    let lng: String?
 }
