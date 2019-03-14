@@ -16,7 +16,7 @@ protocol UserService {
     func getAllUsers() -> Promise<[User]>
     func getUserByUsername(username: String) -> Promise<User>
     func getUserByEmail(email: String) -> Promise<User>
-    func update(id: Int) -> Promise<User>
-    func delete(id: Int) -> Promise<User>
+    func update(userId: Int) -> Promise<User>
+    func delete(userId: Int) -> Promise<User>
     
 }

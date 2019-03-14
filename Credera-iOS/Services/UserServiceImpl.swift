@@ -58,13 +58,13 @@ class UserServiceImpl: UserService {
         })
     }
     
-    func update(id: Int) -> Promise<User> {
+    func update(userId: Int) -> Promise<User> {
         return Promise({ () -> User in
             return User()
         })
     }
     
-    func delete(id: Int) -> Promise<User> {
+    func delete(userId: Int) -> Promise<User> {
         return Promise({ () -> User in
             return User()
         })

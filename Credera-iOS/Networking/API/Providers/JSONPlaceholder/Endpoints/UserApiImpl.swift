@@ -9,7 +9,7 @@
 import Foundation
 import Promises
 
-class UserApiImpl : UserApi {
+class UserApiImpl: UserApi {
     
     private let baseUrl: String = ApiProviderConfig.baseUrl
     private let defaultPath: String = "users"

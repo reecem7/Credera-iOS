@@ -24,6 +24,7 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.titleView = AppHeaderView()
         
+        // TODO: These can be set up through dependency injection instead...
         let userApi: UserApi = UserApiImpl(caller: RequestCaller())
         let userService: UserService = UserServiceImpl(userApi: userApi)
         

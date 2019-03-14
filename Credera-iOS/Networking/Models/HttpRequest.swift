@@ -31,17 +31,17 @@ public struct HttpRequest {
     var baseUrl: String
     var httpMethod: HttpMethod
     var path: String
-    var query: [String:Any]?
-    var payload: [String:Any?]?
-    var headers: [String:String]?
+    var query: [String: Any]?
+    var payload: [String: Any?]?
+    var headers: [String: String]?
     
     public init(
         httpMethod: HttpMethod,
         path: String,
         baseUrl: String = defaults.baseUrl ?? "",
-        query: [String:Any]? = nil,
-        payload: [String:Any?]? = nil,
-        headers: [String:String]? = nil) {
+        query: [String: Any]? = nil,
+        payload: [String: Any?]? = nil,
+        headers: [String: String]? = nil) {
         
         self.baseUrl = baseUrl
         self.httpMethod = httpMethod

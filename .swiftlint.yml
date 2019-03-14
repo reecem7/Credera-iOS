@@ -9,3 +9,4 @@ line_length:
 disabled_rules: # rule identifiers to exclude from running
   - trailing_whitespace
   - line_length 
+  - identifier_name
