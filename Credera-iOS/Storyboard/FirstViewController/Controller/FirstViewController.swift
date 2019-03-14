@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Promises
 
 public protocol NavigationCompletedProtocol: class {
     func showNavigationCompleted()
@@ -23,6 +24,14 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.titleView = AppHeaderView()
         
+        let userApi: UserApi = UserApiImpl(caller: RequestCaller())
+        let userService: UserService = UserServiceImpl(userApi: userApi)
+        
+        userService.getAllUsers().then { (users) in
+            print(users)
+        }.catch { (error) in
+            // Handle error...
+        }
     }
     
     @IBAction func navigationExampleButtonClicked(_ sender: Any) {

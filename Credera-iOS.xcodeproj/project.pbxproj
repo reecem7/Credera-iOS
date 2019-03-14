@@ -33,6 +33,18 @@
 		AFD1E22E223A870700131E4A /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1E22D223A870700131E4A /* NavigationHelper.swift */; };
 		AFD1E234223AA50A00131E4A /* NavigationFinal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD1E233223AA50A00131E4A /* NavigationFinal.storyboard */; };
 		AFD1E236223AA53D00131E4A /* NavigationFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1E235223AA53D00131E4A /* NavigationFinalViewController.swift */; };
+		AFB6946022389FB2009473AE /* RequestCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6945F22389FB2009473AE /* RequestCaller.swift */; };
+		AFB694682238A4AC009473AE /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB694672238A4AC009473AE /* HttpRequest.swift */; };
+		AFB6946C22393EB0009473AE /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6946B22393EB0009473AE /* HttpResponse.swift */; };
+		AFB694712239F19A009473AE /* UserApiImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB694702239F19A009473AE /* UserApiImpl.swift */; };
+		AFB694732239F3EF009473AE /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB694722239F3EF009473AE /* URLRequest+Extension.swift */; };
+		AFB69478223A912F009473AE /* ApiProviderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB69477223A912F009473AE /* ApiProviderConfig.swift */; };
+		AFB6947C223AA9ED009473AE /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6947B223AA9ED009473AE /* UserService.swift */; };
+		AFB6947E223AAA0C009473AE /* UserServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6947D223AAA0C009473AE /* UserServiceImpl.swift */; };
+		AFB69482223AB37C009473AE /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB69481223AB37C009473AE /* UserApi.swift */; };
+		AFB69485223AB4A6009473AE /* UserApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB69484223AB4A6009473AE /* UserApiModel.swift */; };
+		AFB6948A223AD56E009473AE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB69489223AD56E009473AE /* User.swift */; };
+		AFB6948C223AD709009473AE /* AddressApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6948B223AD709009473AE /* AddressApiModel.swift */; };
 		D802FBAAD7A03585ABEB5D15 /* Pods_Credera_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9645AC57AFCE99B609B68B96 /* Pods_Credera_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +107,18 @@
 		AFD1E22D223A870700131E4A /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
 		AFD1E233223AA50A00131E4A /* NavigationFinal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationFinal.storyboard; sourceTree = "<group>"; };
 		AFD1E235223AA53D00131E4A /* NavigationFinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationFinalViewController.swift; sourceTree = "<group>"; };
+		AFB6945F22389FB2009473AE /* RequestCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCaller.swift; sourceTree = "<group>"; };
+		AFB694672238A4AC009473AE /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		AFB6946B22393EB0009473AE /* HttpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
+		AFB694702239F19A009473AE /* UserApiImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiImpl.swift; sourceTree = "<group>"; };
+		AFB694722239F3EF009473AE /* URLRequest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extension.swift"; sourceTree = "<group>"; };
+		AFB69477223A912F009473AE /* ApiProviderConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProviderConfig.swift; sourceTree = "<group>"; };
+		AFB6947B223AA9ED009473AE /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		AFB6947D223AAA0C009473AE /* UserServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceImpl.swift; sourceTree = "<group>"; };
+		AFB69481223AB37C009473AE /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
+		AFB69484223AB4A6009473AE /* UserApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiModel.swift; sourceTree = "<group>"; };
+		AFB69489223AD56E009473AE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AFB6948B223AD709009473AE /* AddressApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressApiModel.swift; sourceTree = "<group>"; };
 		B099B06EF8A37A1DC08D3C01 /* Pods-Credera-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSUITests/Pods-Credera-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CE79981894AA99E25E018793 /* Pods-Credera-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSTests/Pods-Credera-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D94C52EFC2A4126C62F2B683 /* Pods-Credera-iOSUITests.release_qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSUITests.release_qa.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSUITests/Pods-Credera-iOSUITests.release_qa.xcconfig"; sourceTree = "<group>"; };
@@ -244,10 +268,10 @@
 				598E173E219CDA98002AC3EC /* Components */,
 				598E173D219CDA90002AC3EC /* Extensions */,
 				5910781721DD209C0017CA21 /* Managers */,
+				AF46220622374C950053CB00 /* Networking */,
 				598E173C219CDA88002AC3EC /* Resources */,
+				AF462207223752FC0053CB00 /* Services */,
 				598E173B219CDA81002AC3EC /* Storyboard */,
-				598E173A219CDA77002AC3EC /* Models */,
-				598E1739219CDA70002AC3EC /* API */,
 			);
 			path = "Credera-iOS";
 			sourceTree = "<group>";
@@ -285,20 +309,6 @@
 				5910782F21DD299F0017CA21 /* Constants.swift */,
 			);
 			path = Constants;
-			sourceTree = "<group>";
-		};
-		598E1739219CDA70002AC3EC /* API */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		598E173A219CDA77002AC3EC /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		598E173B219CDA81002AC3EC /* Storyboard */ = {
@@ -391,6 +401,88 @@
 				AFD1E235223AA53D00131E4A /* NavigationFinalViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		AF46220622374C950053CB00 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AFB6946A223939E2009473AE /* API */,
+				AFB694642238A0BA009473AE /* Models */,
+				AFB6945F22389FB2009473AE /* RequestCaller.swift */,
+				AFB694722239F3EF009473AE /* URLRequest+Extension.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AF462207223752FC0053CB00 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AFB6947F223AAA3A009473AE /* Models */,
+				AFB6947B223AA9ED009473AE /* UserService.swift */,
+				AFB6947D223AAA0C009473AE /* UserServiceImpl.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AFB694642238A0BA009473AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AFB694672238A4AC009473AE /* HttpRequest.swift */,
+				AFB6946B22393EB0009473AE /* HttpResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AFB6946A223939E2009473AE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AFB6946D2239D1E7009473AE /* Providers */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		AFB6946D2239D1E7009473AE /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				AFB6946E2239D1F5009473AE /* JSONPlaceholder */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		AFB6946E2239D1F5009473AE /* JSONPlaceholder */ = {
+			isa = PBXGroup;
+			children = (
+				AFB69480223AB242009473AE /* Endpoints */,
+				AFB694742239F7AE009473AE /* Models */,
+				AFB69477223A912F009473AE /* ApiProviderConfig.swift */,
+			);
+			path = JSONPlaceholder;
+			sourceTree = "<group>";
+		};
+		AFB694742239F7AE009473AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AFB69484223AB4A6009473AE /* UserApiModel.swift */,
+				AFB6948B223AD709009473AE /* AddressApiModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AFB6947F223AAA3A009473AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AFB69489223AD56E009473AE /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AFB69480223AB242009473AE /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				AFB69481223AB37C009473AE /* UserApi.swift */,
+				AFB694702239F19A009473AE /* UserApiImpl.swift */,
+			);
+			path = Endpoints;
 			sourceTree = "<group>";
 		};
 		B1358001C96A900BEA8211A1 /* Pods */ = {
@@ -576,10 +668,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Credera-iOS/Pods-Credera-iOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promises.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -643,6 +739,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFB6946C22393EB0009473AE /* HttpResponse.swift in Sources */,
 				5910783521DD2AC40017CA21 /* FirstViewController.swift in Sources */,
 				AFD1E22E223A870700131E4A /* NavigationHelper.swift in Sources */,
 				5910782A21DD28A40017CA21 /* AppHeaderView.swift in Sources */,
@@ -652,10 +749,21 @@
 				5910782321DD252A0017CA21 /* MainTabBarAppViewController.swift in Sources */,
 				5910781B21DD21900017CA21 /* NavigationController+Transitions.swift in Sources */,
 				5910783021DD299F0017CA21 /* Constants.swift in Sources */,
+				AFB69478223A912F009473AE /* ApiProviderConfig.swift in Sources */,
+				AFB694712239F19A009473AE /* UserApiImpl.swift in Sources */,
+				AFB6947E223AAA0C009473AE /* UserServiceImpl.swift in Sources */,
+				AFB694732239F3EF009473AE /* URLRequest+Extension.swift in Sources */,
+				AFB69485223AB4A6009473AE /* UserApiModel.swift in Sources */,
+				AFB6946022389FB2009473AE /* RequestCaller.swift in Sources */,
 				5910782E21DD29410017CA21 /* XibView.swift in Sources */,
+				AFB6947C223AA9ED009473AE /* UserService.swift in Sources */,
 				5949D1AD219CBBAC006D2FF0 /* AppDelegate.swift in Sources */,
+				AFB694682238A4AC009473AE /* HttpRequest.swift in Sources */,
 				5910783A21DD2BD80017CA21 /* SecondViewController.swift in Sources */,
 				5910783221DD29E00017CA21 /* UIColor+Extension.swift in Sources */,
+				AFB6948C223AD709009473AE /* AddressApiModel.swift in Sources */,
+				AFB69482223AB37C009473AE /* UserApi.swift in Sources */,
+				AFB6948A223AD56E009473AE /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -825,7 +933,7 @@
 				APP_DISPLAY_NAME = "Credera iOS";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HPYS5PBF55;
+				DEVELOPMENT_TEAM = 5Q9ZL326P2;
 				INFOPLIST_FILE = "$(SRCROOT)/Credera-iOS/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -846,7 +954,7 @@
 				APP_DISPLAY_NAME = "Credera iOS";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HPYS5PBF55;
+				DEVELOPMENT_TEAM = 5Q9ZL326P2;
 				INFOPLIST_FILE = "$(SRCROOT)/Credera-iOS/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1014,7 +1122,7 @@
 				APP_DISPLAY_NAME = "Credera iOS (QA)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_QA;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HPYS5PBF55;
+				DEVELOPMENT_TEAM = 5Q9ZL326P2;
 				INFOPLIST_FILE = "$(SRCROOT)/Credera-iOS/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1133,7 +1241,7 @@
 				APP_DISPLAY_NAME = "Credera iOS (QA)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_QA;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HPYS5PBF55;
+				DEVELOPMENT_TEAM = 5Q9ZL326P2;
 				INFOPLIST_FILE = "$(SRCROOT)/Credera-iOS/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
