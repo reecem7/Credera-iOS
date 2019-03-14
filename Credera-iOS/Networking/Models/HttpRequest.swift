@@ -60,10 +60,10 @@ extension HttpRequest {
         
         var components = URLComponents(string: url)
         if let qItems = query {
-            let queryItems:[URLQueryItem] = qItems.reduce([], { (result, current) -> [URLQueryItem] in
-                var _result = result
-                _result.append(URLQueryItem(name: current.key, value: "\(current.value)"))
-                return _result
+            let queryItems: [URLQueryItem] = qItems.reduce([], { (result, current) -> [URLQueryItem] in
+                var qResult = result
+                qResult.append(URLQueryItem(name: current.key, value: "\(current.value)"))
+                return qResult
             })
             components?.queryItems = queryItems
         }

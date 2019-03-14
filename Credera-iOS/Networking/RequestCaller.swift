@@ -35,9 +35,9 @@ public class RequestCaller {
                     let statusCode = httpResponse.statusCode
                     
                     do {
-                        let _data = data ?? Data()
+                        let responseData = data ?? Data()
                         if (200...399).contains(statusCode) {
-                            let result = try self.decoder.decode(V.self, from: _data)
+                            let result = try self.decoder.decode(V.self, from: responseData)
                             
                             fullfill(result)
                         } else {
