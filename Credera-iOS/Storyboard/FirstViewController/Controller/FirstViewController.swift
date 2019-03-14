@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public protocol NavigationCompletedProtocol {
+public protocol NavigationCompletedProtocol: class {
     func showNavigationCompleted()
 }
 
@@ -18,7 +18,6 @@ class FirstViewController: UIViewController {
     let passedAlongInformationBetweenVC: String = "This is an example of passing information from one VC to another"
     
     @IBOutlet weak var navigationStatusLabel: UILabel!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

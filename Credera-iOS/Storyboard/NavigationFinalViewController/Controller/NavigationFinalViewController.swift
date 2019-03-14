@@ -10,13 +10,13 @@ import UIKit
 
 class NavigationFinalViewController: UIViewController, NavigationHelper {
     
-    public class var storyboardName : String { get { return "NavigationFinal" } }
-    public class var viewControllerID : String { get { return "NavigationFinalViewController" } }
+    public class var storyboardName: String { return "NavigationFinal" }
+    public class var viewControllerID: String { return "NavigationFinalViewController" }
     
     @IBOutlet weak var passedInfoLabel: UILabel!
     
     var passedInfo: String?
-    var delegate: NavigationCompletedProtocol?
+    weak var delegate: NavigationCompletedProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +25,15 @@ class NavigationFinalViewController: UIViewController, NavigationHelper {
     }
     
     public static func getInstance(passedInformation: String, delegate: NavigationCompletedProtocol) -> UIViewController {
-        let navigationFinalVC = getInstance() as! NavigationFinalViewController
+        guard let navigationFinalVC = getInstance() as? NavigationFinalViewController else {
+            return UIViewController()
+        }
         
         navigationFinalVC.passedInfo = passedInformation
         navigationFinalVC.delegate = delegate
         
         return navigationFinalVC
+        
     }
     
     func setupUI() {

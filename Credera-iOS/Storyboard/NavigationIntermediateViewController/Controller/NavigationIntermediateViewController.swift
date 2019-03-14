@@ -10,11 +10,11 @@ import UIKit
 
 class NavigationIntermediateViewController: UIViewController, NavigationHelper {
     
-    public class var storyboardName : String { get { return "NavigationIntermediate" } }
-    public class var viewControllerID : String { get { return "NavigationIntermediateViewController" } }
+    public class var storyboardName: String { return "NavigationIntermediate" }
+    public class var viewControllerID: String { return "NavigationIntermediateViewController" }
     
     var passedInformation: String?
-    var delegate: NavigationCompletedProtocol?
+    weak var delegate: NavigationCompletedProtocol?
     
     @IBOutlet weak var passedInformationLabel: UILabel!
     
@@ -26,7 +26,9 @@ class NavigationIntermediateViewController: UIViewController, NavigationHelper {
     }
     
     public static func getInstance(passedInformation: String, delegate: NavigationCompletedProtocol) -> UIViewController {
-        let navigationIntermediateController = getInstance() as! NavigationIntermediateViewController
+        guard let navigationIntermediateController = getInstance() as? NavigationIntermediateViewController else {
+            return UIViewController()
+        }
         
         navigationIntermediateController.passedInformation = passedInformation
         navigationIntermediateController.delegate = delegate

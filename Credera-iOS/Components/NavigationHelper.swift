@@ -12,28 +12,24 @@ import UIKit
 public protocol NavigationHelper {
     
     // This is the name of the storyboard file
-    static var storyboardName : String { get }
+    static var storyboardName: String { get }
     
     // This is the "storyboardID" for the viewController as defined
     // in the storyboard.
-    static var viewControllerID : String { get }
+    static var viewControllerID: String { get }
     
-    static var storyboardBundle : Bundle { get }
+    static var storyboardBundle: Bundle { get }
     
     static func getInstance() -> UIViewController
     
 }
 
-extension NavigationHelper where Self : UIViewController {
-    public static var storyboardBundle : Bundle {
-        get {
-            return Bundle(for: self)
-        }
+extension NavigationHelper where Self: UIViewController {
+    public static var storyboardBundle: Bundle {
+        return Bundle(for: self)
     }
     
     public static func getInstance() -> UIViewController {
         return UIStoryboard(name: self.storyboardName, bundle: self.storyboardBundle).instantiateViewController(withIdentifier: self.viewControllerID) as UIViewController
     }
 }
-
-

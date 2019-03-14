@@ -14,7 +14,7 @@ class MainTabBarAppViewController: UITabBarController, UITabBarControllerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var viewControllerArray = Array<UIViewController>()
+        var viewControllerArray: [UIViewController] = []
         
         // Initialize the Tab Bar controllers via their respective storyboards
         // The TabBarItems with titles & icons are in each Storyboard's first scene

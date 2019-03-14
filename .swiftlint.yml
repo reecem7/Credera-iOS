@@ -7,4 +7,5 @@ analyzer_rules: # Rules run by `swiftlint analyze` (experimental)
 line_length: 
   ignores_comments: true # ignoring line length for commented out code
 disabled_rules: # rule identifiers to exclude from running
-  - trailing_whitespace 
+  - trailing_whitespace
+  - line_length 
