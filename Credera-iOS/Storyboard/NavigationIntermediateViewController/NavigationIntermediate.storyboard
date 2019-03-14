@@ -27,6 +27,9 @@
                                 </constraints>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Navigate to final screen"/>
+                                <connections>
+                                    <action selector="navToFinalScreenClicked:" destination="bhr-2p-eax" eventType="touchUpInside" id="waU-Gm-x73"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTi-cv-YGJ">
                                 <rect key="frame" x="70.5" y="389" width="234" height="20.5"/>

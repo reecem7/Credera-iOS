@@ -10,10 +10,11 @@ import UIKit
 
 class NavigationIntermediateViewController: UIViewController, NavigationHelper {
     
-    public class var storyboardName : String { get { return "NavigationIntermediateScreen" } }
+    public class var storyboardName : String { get { return "NavigationIntermediate" } }
     public class var viewControllerID : String { get { return "NavigationIntermediateViewController" } }
     
     var passedInformation: String?
+    var delegate: NavigationCompletedProtocol?
     
     @IBOutlet weak var passedInformationLabel: UILabel!
     
@@ -24,9 +25,11 @@ class NavigationIntermediateViewController: UIViewController, NavigationHelper {
         setupUI()
     }
     
-    public static func getInstance(passedInformation: String) -> UIViewController {
+    public static func getInstance(passedInformation: String, delegate: NavigationCompletedProtocol) -> UIViewController {
         let navigationIntermediateController = getInstance() as! NavigationIntermediateViewController
+        
         navigationIntermediateController.passedInformation = passedInformation
+        navigationIntermediateController.delegate = delegate
         
         return navigationIntermediateController
     }
@@ -34,4 +37,12 @@ class NavigationIntermediateViewController: UIViewController, NavigationHelper {
     func setupUI() {
         passedInformationLabel.text = passedInformation
     }
+    
+    @IBAction func navToFinalScreenClicked(_ sender: Any) {
+        if let passedString = passedInformation, let navigationCompletedDelegate = delegate {
+            let navigationFinalVC = NavigationFinalViewController.getInstance(passedInformation: passedString, delegate: navigationCompletedDelegate)
+            navigationController?.pushViewController(navigationFinalVC, animated: true)
+        }
+    }
+    
 }
