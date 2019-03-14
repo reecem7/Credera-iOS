@@ -5,4 +5,6 @@ excluded:  # paths to ignore during linting.
 analyzer_rules: # Rules run by `swiftlint analyze` (experimental)
   - explicit_self
 line_length: 
-  ignores_comments: true # ignoring line length for commented out code 
+  ignores_comments: true # ignoring line length for commented out code
+disabled_rules: # rule identifiers to exclude from running
+  - trailing_whitespace 
