@@ -9,6 +9,7 @@ target 'Credera-iOS' do
 
     # Pods for Credera-iOS
     pod 'CocoaLumberjack/Swift', '3.4.2'
+    pod 'SwiftLint', '0.30.1'
 
     target 'Credera-iOSTests' do
         inherit! :search_paths
