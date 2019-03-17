@@ -15,6 +15,9 @@ target 'Credera-iOS' do
     target 'Credera-iOSTests' do
         inherit! :search_paths
         # Pods for testing
+        
+        pod 'PromisesSwift', '1.2.7'
+        pod 'OHHTTPStubs/Swift', '7.0.0'
     end
 
     target 'Credera-iOSUITests' do

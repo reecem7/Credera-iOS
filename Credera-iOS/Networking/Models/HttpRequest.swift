@@ -65,6 +65,7 @@ extension HttpRequest {
                 qResult.append(URLQueryItem(name: current.key, value: "\(current.value)"))
                 return qResult
             })
+            
             components?.queryItems = queryItems
         }
         
