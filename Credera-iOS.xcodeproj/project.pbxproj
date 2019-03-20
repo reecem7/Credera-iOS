@@ -40,6 +40,11 @@
 		AFB69485223AB4A6009473AE /* UserApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB69484223AB4A6009473AE /* UserApiModel.swift */; };
 		AFB6948A223AD56E009473AE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB69489223AD56E009473AE /* User.swift */; };
 		AFB6948C223AD709009473AE /* AddressApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6948B223AD709009473AE /* AddressApiModel.swift */; };
+		AFBD0D122241B03400123314 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD0D112241B03400123314 /* HttpError.swift */; };
+		AFBD0D132241B22B00123314 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD0D112241B03400123314 /* HttpError.swift */; };
+		AFBD0D152241BC1900123314 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD0D142241BC1900123314 /* NetworkError.swift */; };
+		AFBD0D162241BC3700123314 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD0D142241BC1900123314 /* NetworkError.swift */; };
+		AFBD0D182241D8A200123314 /* HttpRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD0D172241D8A200123314 /* HttpRequestTests.swift */; };
 		AFD1E22A223A84C300131E4A /* NavigationIntermediate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD1E229223A84C300131E4A /* NavigationIntermediate.storyboard */; };
 		AFD1E22C223A84DF00131E4A /* NavigationIntermediateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1E22B223A84DF00131E4A /* NavigationIntermediateViewController.swift */; };
 		AFD1E22E223A870700131E4A /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1E22D223A870700131E4A /* NavigationHelper.swift */; };
@@ -116,6 +121,9 @@
 		AFB69484223AB4A6009473AE /* UserApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiModel.swift; sourceTree = "<group>"; };
 		AFB69489223AD56E009473AE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AFB6948B223AD709009473AE /* AddressApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressApiModel.swift; sourceTree = "<group>"; };
+		AFBD0D112241B03400123314 /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
+		AFBD0D142241BC1900123314 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		AFBD0D172241D8A200123314 /* HttpRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestTests.swift; sourceTree = "<group>"; };
 		AFD1E229223A84C300131E4A /* NavigationIntermediate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationIntermediate.storyboard; sourceTree = "<group>"; };
 		AFD1E22B223A84DF00131E4A /* NavigationIntermediateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationIntermediateViewController.swift; sourceTree = "<group>"; };
 		AFD1E22D223A870700131E4A /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
@@ -392,6 +400,8 @@
 			children = (
 				AFB694672238A4AC009473AE /* HttpRequest.swift */,
 				AFB6946B22393EB0009473AE /* HttpResponse.swift */,
+				AFBD0D112241B03400123314 /* HttpError.swift */,
+				AFBD0D142241BC1900123314 /* NetworkError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -498,6 +508,7 @@
 			isa = PBXGroup;
 			children = (
 				AFD8F735223E082400D9306F /* RequestCallerTests.swift */,
+				AFBD0D172241D8A200123314 /* HttpRequestTests.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -787,6 +798,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFB6946C22393EB0009473AE /* HttpResponse.swift in Sources */,
+				AFBD0D152241BC1900123314 /* NetworkError.swift in Sources */,
 				5910783521DD2AC40017CA21 /* FirstViewController.swift in Sources */,
 				AFD1E22E223A870700131E4A /* NavigationHelper.swift in Sources */,
 				5910782A21DD28A40017CA21 /* AppHeaderView.swift in Sources */,
@@ -805,6 +817,7 @@
 				AFB6946022389FB2009473AE /* RequestCaller.swift in Sources */,
 				5910782E21DD29410017CA21 /* XibView.swift in Sources */,
 				AFB6947C223AA9ED009473AE /* UserService.swift in Sources */,
+				AFBD0D122241B03400123314 /* HttpError.swift in Sources */,
 				5949D1AD219CBBAC006D2FF0 /* AppDelegate.swift in Sources */,
 				AFB694682238A4AC009473AE /* HttpRequest.swift in Sources */,
 				5910783A21DD2BD80017CA21 /* SecondViewController.swift in Sources */,
@@ -829,6 +842,9 @@
 			files = (
 				AFD8F736223E082400D9306F /* RequestCallerTests.swift in Sources */,
 				AFD8F73B223E0A2200D9306F /* HttpRequest.swift in Sources */,
+				AFBD0D132241B22B00123314 /* HttpError.swift in Sources */,
+				AFBD0D162241BC3700123314 /* NetworkError.swift in Sources */,
+				AFBD0D182241D8A200123314 /* HttpRequestTests.swift in Sources */,
 				AFD8F72E223E070C00D9306F /* Credera_iOSTests.swift in Sources */,
 				AFD8F73A223E0A1C00D9306F /* RequestCaller.swift in Sources */,
 			);

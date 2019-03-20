@@ -73,9 +73,7 @@ extension HttpRequest {
         request.httpMethod = httpMethod.rawValue
         
         if payload != nil,
-            let payloadData = try? JSONSerialization
-                .data(withJSONObject: payload!,
-                      options: []) {
+            let payloadData = try? JSONSerialization.data(withJSONObject: payload!, options: []) {
             request.httpBody = payloadData
         }
         

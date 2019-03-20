@@ -22,36 +22,43 @@ public class RequestCaller {
         self.init(config: URLSessionConfiguration.default)
     }
     
+    /*
+     * Makes an asynchronous HTTP request and returns a Promise with the JSON response mapped
+     * to a model object that implements `Decodable`
+     */
     public func call<V: Decodable>(_ request: URLRequest) -> Promise<V> {
         return Promise<V>(on: .global(qos: .background), { (fullfill, reject) in
-            self.urlSession.dataTask(with: request) { (data, urlResponse, protocolError) in
-                // TODO: Fix this, not sure what error this holds...
-                if let protocolError = protocolError {
-                    reject(protocolError)
+            self.urlSession.dataTask(with: request) { (data, response, error) in
+                // TODO: When is this damn thing populated?!
+                if let error = error {
+                    reject(error)
                     return
                 }
                 
-                if let httpResponse = urlResponse as? HTTPURLResponse {
+                if let httpResponse = response as? HTTPURLResponse {
                     let statusCode = httpResponse.statusCode
                     
                     do {
                         let responseData = data ?? Data()
                         if (200...399).contains(statusCode) {
                             let result = try self.decoder.decode(V.self, from: responseData)
-                            
                             fullfill(result)
                         } else {
-                            // TODO: Fix this, need a better error to return
-                            reject(NSError(domain: "RequestCaller.call", code: -1, userInfo: nil))
+                            let httpError = self.mapToHttpError(statusCode: statusCode)
+                            reject(httpError ?? NetworkError.Unknown)
                         }
                     } catch let decodeError {
-                        reject(decodeError)
+                        // TODO: Log this decodeError using the log framework thingy...
+                        reject(NetworkError.DecodeJson)
                     }
                 } else {
-                    // TODO: Fix this, need a better error to return
-                    reject(NSError(domain: "RequestCaller.call", code: -1, userInfo: nil))
+                    reject(NetworkError.UnknownResponse)
                 }
             }.resume()
         })
+    }
+    
+    private func mapToHttpError(statusCode: Int) -> HttpError? {
+        return HttpError(rawValue: statusCode) ?? nil
     }
 }

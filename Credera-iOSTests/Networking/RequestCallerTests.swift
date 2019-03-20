@@ -15,6 +15,8 @@ class RequestCallerTests: XCTestCase {
     private static let TEST_HOST = "test.example.com"
     private static let BASE_URL = "https://\(TEST_HOST)/"
     
+    private struct TestCodable: Codable {}
+    
     override func setUp() {
         super.setUp()
     }
@@ -45,21 +47,17 @@ class RequestCallerTests: XCTestCase {
         promise.then { value in
             // Nothing to test here
         }.catch({ error in
+            XCTAssertEqual(NetworkError.DecodeJson, error as! NetworkError)
             testExpectation.fulfill()
-            
-            guard error is DecodingError else {
-                XCTFail("Unknown Error type was returned")
-                return
-            }
         })
         
         waitForExpectations(timeout: 10)
     }
     
-    func test_callWithDecodable_whenResponseIs404_correctErrorIsReturned() {
+    func test_callWithDecodable_withResponseOf404_correctErrorIsReturned() {
         
         // Arrange
-        let testExpectation = expectation(description: "test_callWithDecodable_whenResponseIs404_correctErrorIsReturned")
+        let testExpectation = expectation(description: "test_callWithDecodable_withResponseOf404_correctErrorIsReturned")
         
         stub(condition: isHost(RequestCallerTests.TEST_HOST)) { _ in
             return OHHTTPStubsResponse(data: Data(), statusCode: 404, headers: nil)
@@ -74,18 +72,64 @@ class RequestCallerTests: XCTestCase {
         // Assert
         promise.then { value in
             // Nothing to test here
+        }.catch({ error in
+            XCTAssertEqual(HttpError.NotFound, error as! HttpError)
+            testExpectation.fulfill()
+        })
+        
+        waitForExpectations(timeout: 10)
+    }
+    
+    func test_callWithDecodable_withResponseOf500_correctErrorIsReturned() {
+        
+        // Arrange
+        let testExpectation = expectation(description: "test_callWithDecodable_withResponseOf500_correctErrorIsReturned")
+        
+        stub(condition: isHost(RequestCallerTests.TEST_HOST)) { _ in
+            return OHHTTPStubsResponse(data: Data(), statusCode: 500, headers: nil)
+        };
+        
+        let request = HttpRequest(httpMethod: HttpMethod.options, path: "", baseUrl: RequestCallerTests.BASE_URL)
+        let caller = RequestCaller()
+        
+        // Act
+        let promise: Promise<TestCodable> = caller.call(request.asURLRequest())
+        
+        // Assert
+        promise.then { value in
+            // Nothing to test here
             }.catch({ error in
+                XCTAssertEqual(HttpError.InternalServerError, error as! HttpError)
                 testExpectation.fulfill()
-                
-                guard error is DecodingError else {
-                    XCTFail("Unknown Error type was returned")
-                    return
-                }
             })
         
         waitForExpectations(timeout: 10)
     }
     
+    func test_callWithDecodable_withInvalidStatusCode_correctErrorIsReturned() {
+        
+        // Arrange
+        let testExpectation = expectation(description: "test_callWithDecodable_withInvalidStatusCode_correctErrorIsReturned")
+        
+        stub(condition: isHost(RequestCallerTests.TEST_HOST)) { _ in
+            return OHHTTPStubsResponse(data: Data(), statusCode: 666, headers: nil)
+        };
+        
+        let request = HttpRequest(httpMethod: HttpMethod.put, path: "", baseUrl: RequestCallerTests.BASE_URL)
+        let caller = RequestCaller()
+        
+        // Act
+        let promise: Promise<TestCodable> = caller.call(request.asURLRequest())
+        
+        // Assert
+        promise.then { value in
+            // Nothing to test here
+        }.catch({ error in
+            XCTAssertEqual(NetworkError.Unknown, error as! NetworkError)
+            testExpectation.fulfill()
+        })
+        
+        waitForExpectations(timeout: 10)
+    }
+    
 }
-
-private struct TestCodable: Codable {}
