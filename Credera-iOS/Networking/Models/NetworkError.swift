@@ -11,6 +11,7 @@ import Foundation
 enum NetworkError: Error {
     case DecodeJson
     case DecodeXml
+    case InvalidRequest
     case Unknown
     case UnknownResponse
 }

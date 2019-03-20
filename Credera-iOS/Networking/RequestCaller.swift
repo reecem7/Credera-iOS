@@ -26,9 +26,14 @@ public class RequestCaller {
      * Makes an asynchronous HTTP request and returns a Promise with the JSON response mapped
      * to a model object that implements `Decodable`
      */
-    public func call<V: Decodable>(_ request: URLRequest) -> Promise<V> {
-        return Promise<V>(on: .global(qos: .background), { (fullfill, reject) in
-            self.urlSession.dataTask(with: request) { (data, response, error) in
+    public func call<D: Decodable>(_ request: HttpRequest) -> Promise<D> {
+        
+        if !request.isValid() {
+            return Promise(NetworkError.InvalidRequest)
+        }
+        
+        return Promise<D>(on: .global(qos: .background), { (fullfill, reject) in
+            self.urlSession.dataTask(with: request.asURLRequest()) { (data, response, error) in
                 // TODO: When is this damn thing populated?!
                 if let error = error {
                     reject(error)
@@ -41,7 +46,7 @@ public class RequestCaller {
                     do {
                         let responseData = data ?? Data()
                         if (200...399).contains(statusCode) {
-                            let result = try self.decoder.decode(V.self, from: responseData)
+                            let result = try self.decoder.decode(D.self, from: responseData)
                             fullfill(result)
                         } else {
                             let httpError = self.mapToHttpError(statusCode: statusCode)

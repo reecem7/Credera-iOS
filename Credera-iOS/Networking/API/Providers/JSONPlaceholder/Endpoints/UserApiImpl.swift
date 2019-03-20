@@ -11,76 +11,73 @@ import Promises
 
 class UserApiImpl: UserApi {
     
-    private let baseUrl: String = ApiProviderConfig.baseUrl
-    private let defaultPath: String = "users"
-
-    private var caller: RequestCaller
+    private let caller: RequestCaller
     
     init(caller: RequestCaller) {
         self.caller = caller
     }
     
     func create() -> Promise<[UserApiModel]> {
-        let request = HttpRequest(httpMethod: HttpMethod.post, path: defaultPath, baseUrl: baseUrl)
-        let response: Promise<[UserApiModel]> = caller.call(request.asURLRequest())
+        let request = UsersApiRequest(httpMethod: HttpMethod.post)
+        let response: Promise<[UserApiModel]> = caller.call(request)
         
         return response
     }
     
     func read() -> Promise<[UserApiModel]> {
         let request = reqRead()
-        let response: Promise<[UserApiModel]> = caller.call(request.asURLRequest())
+        let response: Promise<[UserApiModel]> = caller.call(request)
         
         return response
     }
     
     func readByUsername(username: String) -> Promise<[UserApiModel]> {
         let request = reqRead(username: username)
-        let response: Promise<[UserApiModel]> = caller.call(request.asURLRequest())
+        let response: Promise<[UserApiModel]> = caller.call(request)
         
         return response
     }
     
     func readByEmail(email: String) -> Promise<[UserApiModel]> {
         let request = reqRead(email: email)
-        let response: Promise<[UserApiModel]> = caller.call(request.asURLRequest())
+        let response: Promise<[UserApiModel]> = caller.call(request)
         
         return response
     }
     
     func update(id: Int) -> Promise<[UserApiModel]> {
-        var request = HttpRequest(httpMethod: HttpMethod.put, path: defaultPath, baseUrl: baseUrl)
+        let request = UsersApiRequest(httpMethod: HttpMethod.put)
         request.query = ["id": id]
         
-        let response: Promise<[UserApiModel]> = caller.call(request.asURLRequest())
+        let response: Promise<[UserApiModel]> = caller.call(request)
         
         return response
     }
     
     func delete(id: Int) -> Promise<[UserApiModel]> {
-        var request = HttpRequest(httpMethod: HttpMethod.delete, path: defaultPath, baseUrl: baseUrl)
+        let request = UsersApiRequest(httpMethod: HttpMethod.delete)
         request.query = ["id": id]
         
-        let response: Promise<[UserApiModel]> = caller.call(request.asURLRequest())
+        let response: Promise<[UserApiModel]> = caller.call(request)
         
         return response
     }
     
     // region Request Helpers
     
-    private func reqRead() -> HttpRequest {
-        return HttpRequest(httpMethod: HttpMethod.get, path: defaultPath, baseUrl: baseUrl)
+    private func reqRead() -> UsersApiRequest {
+        return UsersApiRequest(httpMethod: HttpMethod.get)
     }
     
-    private func reqRead(email: String) -> HttpRequest {
-        var request = reqRead()
+    private func reqRead(email: String) -> UsersApiRequest {
+        let request = reqRead()
         request.query = ["email": email]
         
         return request
     }
     
-    private func reqRead(username: String) -> HttpRequest {
-        var request = reqRead()
+    private func reqRead(username: String) -> UsersApiRequest {
+        let request = reqRead()
         request.query = ["username": username]
         
         return request
