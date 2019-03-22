@@ -2,12 +2,11 @@
 //  Credera_iOSTests.swift
 //  Credera-iOSTests
 //
-//  Created by Zachary Slayter on 11/14/18.
-//  Copyright © 2018 Credera. All rights reserved.
+//  Created by Fernando Berrios on 3/16/19.
+//  Copyright © 2019 Credera. All rights reserved.
 //
 
 import XCTest
-@testable import Credera_iOS
 
 class Credera_iOSTests: XCTestCase {
 
