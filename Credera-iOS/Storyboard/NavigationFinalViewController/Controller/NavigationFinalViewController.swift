@@ -8,8 +8,8 @@
 
 import UIKit
 
-class NavigationFinalViewController: UIViewController, NavigationHelper {
-    
+class NavigationFinalViewController: UIViewController, NavigationHelper, NavigationViewControllerProtocol {
+    typealias PassedInfo = String
     public class var storyboardName: String { return "NavigationFinal" }
     public class var viewControllerID: String { return "NavigationFinalViewController" }
     
@@ -24,7 +24,7 @@ class NavigationFinalViewController: UIViewController, NavigationHelper {
         setupUI()
     }
     
-    public static func getInstance(passedInformation: String, delegate: NavigationCompletedProtocol) -> UIViewController {
+    public static func getInstance(passedInformation: String, delegate: NavigationCompletedProtocol?) -> UIViewController {
         guard let navigationFinalVC = getInstance() as? NavigationFinalViewController else {
             return UIViewController()
         }
