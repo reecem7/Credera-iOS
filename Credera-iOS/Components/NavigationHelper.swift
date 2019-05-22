@@ -11,6 +11,9 @@ import UIKit
 
 public protocol NavigationHelper {
     
+    // This is a generic placeholder for the passed data type and is defined in each view controller
+    associatedtype PassedInfo
+    
     // This is the name of the storyboard file
     static var storyboardName: String { get }
     
@@ -20,7 +23,7 @@ public protocol NavigationHelper {
     
     static var storyboardBundle: Bundle { get }
     
-    static func getInstance() -> UIViewController
+    static func getInstance(passedInformation: PassedInfo, delegate: NavigationCompletedProtocol?) -> UIViewController
     
 }
 

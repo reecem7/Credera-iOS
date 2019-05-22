@@ -8,16 +8,15 @@
 
 import UIKit
 
-protocol NavigationViewControllerProtocol {
-    associatedtype PassedInfo
-    static func getInstance(passedInformation: PassedInfo, delegate: NavigationCompletedProtocol?) -> UIViewController
-}
-
-class NavigationIntermediateViewController: UIViewController, NavigationHelper, NavigationViewControllerProtocol {
+class NavigationIntermediateViewController: UIViewController, NavigationHelper {
+    
+    // Defines the type of data passed from the previous controller
     typealias PassedInfo = String
+    
+    // Required variables for the NavigationHelper
     public class var storyboardName: String { return "NavigationIntermediate" }
     public class var viewControllerID: String { return "NavigationIntermediateViewController" }
-    
+
     var passedInformation: String?
     weak var delegate: NavigationCompletedProtocol?
     
@@ -30,7 +29,9 @@ class NavigationIntermediateViewController: UIViewController, NavigationHelper, 
         setupUI()
     }
     
-    static func getInstance(passedInformation: String, delegate: NavigationCompletedProtocol?) -> UIViewController {
+    // Required method for the NavigationHelper
+    public static func getInstance(passedInformation: String, delegate: NavigationCompletedProtocol?) -> UIViewController {
+
         guard let navigationIntermediateController = getInstance() as? NavigationIntermediateViewController else {
             return UIViewController()
         }

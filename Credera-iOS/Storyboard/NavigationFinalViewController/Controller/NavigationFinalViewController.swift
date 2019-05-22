@@ -8,8 +8,12 @@
 
 import UIKit
 
-class NavigationFinalViewController: UIViewController, NavigationHelper, NavigationViewControllerProtocol {
+class NavigationFinalViewController: UIViewController, NavigationHelper {
+    
+    // Defines the type of data passed from the previous controller
     typealias PassedInfo = String
+    
+    // Required variables for the NavigationHelper
     public class var storyboardName: String { return "NavigationFinal" }
     public class var viewControllerID: String { return "NavigationFinalViewController" }
     
@@ -24,6 +28,7 @@ class NavigationFinalViewController: UIViewController, NavigationHelper, Navigat
         setupUI()
     }
     
+    // Required method for the NavigationHelper
     public static func getInstance(passedInformation: String, delegate: NavigationCompletedProtocol?) -> UIViewController {
         guard let navigationFinalVC = getInstance() as? NavigationFinalViewController else {
             return UIViewController()
