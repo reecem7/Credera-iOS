@@ -11,8 +11,10 @@ import UIKit
 
 public protocol NavigationHelper {
     
-    // This is a generic placeholder for the passed data type and is defined in each view controller
+    // These are generic placeholders for the passed data type and return type
+    // They are defined in each view controller
     associatedtype PassedInfo
+    associatedtype SpecificViewController
     
     // This is the name of the storyboard file
     static var storyboardName: String { get }
@@ -23,7 +25,7 @@ public protocol NavigationHelper {
     
     static var storyboardBundle: Bundle { get }
     
-    static func getInstance(passedInformation: PassedInfo, delegate: NavigationCompletedProtocol?) -> UIViewController
+    static func getInstance(passedInformation: PassedInfo, delegate: NavigationCompletedProtocol?) -> SpecificViewController
     
 }
 
@@ -32,7 +34,12 @@ extension NavigationHelper where Self: UIViewController {
         return Bundle(for: self)
     }
     
-    public static func getInstance() -> UIViewController {
-        return UIStoryboard(name: self.storyboardName, bundle: self.storyboardBundle).instantiateViewController(withIdentifier: self.viewControllerID) as UIViewController
+    public static func getInstance() -> SpecificViewController {
+        
+        guard let viewController = UIStoryboard(name: self.storyboardName, bundle: self.storyboardBundle).instantiateViewController(withIdentifier: self.viewControllerID) as? SpecificViewController else {
+            fatalError("Error instantiating view controller: " + self.viewControllerID)
+        }
+        
+        return viewController
     }
 }

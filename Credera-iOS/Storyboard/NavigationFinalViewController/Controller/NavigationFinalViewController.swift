@@ -12,6 +12,7 @@ class NavigationFinalViewController: UIViewController, NavigationHelper {
     
     // Defines the type of data passed from the previous controller
     typealias PassedInfo = String
+    typealias SpecificViewController = NavigationFinalViewController
     
     // Required variables for the NavigationHelper
     public class var storyboardName: String { return "NavigationFinal" }
@@ -29,10 +30,9 @@ class NavigationFinalViewController: UIViewController, NavigationHelper {
     }
     
     // Required method for the NavigationHelper
-    public static func getInstance(passedInformation: String, delegate: NavigationCompletedProtocol?) -> UIViewController {
-        guard let navigationFinalVC = getInstance() as? NavigationFinalViewController else {
-            return UIViewController()
-        }
+    public static func getInstance(passedInformation: String, delegate: NavigationCompletedProtocol?) -> SpecificViewController {
+
+        let navigationFinalVC = getInstance()
         
         navigationFinalVC.passedInfo = passedInformation
         navigationFinalVC.delegate = delegate

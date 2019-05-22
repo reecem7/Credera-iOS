@@ -12,6 +12,7 @@ class NavigationIntermediateViewController: UIViewController, NavigationHelper {
     
     // Defines the type of data passed from the previous controller
     typealias PassedInfo = String
+    typealias SpecificViewController = NavigationIntermediateViewController
     
     // Required variables for the NavigationHelper
     public class var storyboardName: String { return "NavigationIntermediate" }
@@ -30,11 +31,9 @@ class NavigationIntermediateViewController: UIViewController, NavigationHelper {
     }
     
     // Required method for the NavigationHelper
-    public static func getInstance(passedInformation: String, delegate: NavigationCompletedProtocol?) -> UIViewController {
-
-        guard let navigationIntermediateController = getInstance() as? NavigationIntermediateViewController else {
-            return UIViewController()
-        }
+    public static func getInstance(passedInformation: String, delegate: NavigationCompletedProtocol?) -> SpecificViewController {
+        
+        let navigationIntermediateController = getInstance()
         
         navigationIntermediateController.passedInformation = passedInformation
         navigationIntermediateController.delegate = delegate
