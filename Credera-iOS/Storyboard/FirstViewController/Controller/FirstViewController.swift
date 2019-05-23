@@ -36,7 +36,7 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func navigationExampleButtonClicked(_ sender: Any) {
-        let navigationIntermediateScreen = NavigationIntermediateViewController.getInstance(passedInformation: passedAlongInformationBetweenVC, delegate: self)
+        let navigationIntermediateScreen = NavigationIntermediateViewController.getInstance(model: passedAlongInformationBetweenVC, delegate: self)
         navigationController?.pushViewController(navigationIntermediateScreen, animated: true)
     }
     
