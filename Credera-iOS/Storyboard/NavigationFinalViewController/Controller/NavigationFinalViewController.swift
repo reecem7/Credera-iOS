@@ -8,10 +8,15 @@
 
 import UIKit
 
-class NavigationFinalViewController: UIViewController, NavigationHelper {
+class NavigationFinalViewController: UIViewController, NavigationProtocol {
     
+    // Required variables for the NavigationProtocol
     public class var storyboardName: String { return "NavigationFinal" }
     public class var viewControllerID: String { return "NavigationFinalViewController" }
+    
+    // Defines the type of data passed from the previous controller and the method of communicating to previous controllers
+    typealias Model = String
+    typealias Delegate = NavigationCompletedProtocol
     
     @IBOutlet weak var passedInfoLabel: UILabel!
     
@@ -24,12 +29,12 @@ class NavigationFinalViewController: UIViewController, NavigationHelper {
         setupUI()
     }
     
-    public static func getInstance(passedInformation: String, delegate: NavigationCompletedProtocol) -> UIViewController {
-        guard let navigationFinalVC = getInstance() as? NavigationFinalViewController else {
-            return UIViewController()
-        }
+    // Required method for the NavigationProtocol
+    public static func getInstance(model: String, delegate: NavigationCompletedProtocol?) -> Self {
+
+        let navigationFinalVC = getInstance()
         
-        navigationFinalVC.passedInfo = passedInformation
+        navigationFinalVC.passedInfo = model
         navigationFinalVC.delegate = delegate
         
         return navigationFinalVC

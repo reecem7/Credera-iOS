@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C4D6B3DE27C746F5B67A025 /* Pods_Credera_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6428362F40383B253C816DD2 /* Pods_Credera_iOSUITests.framework */; };
-		3E617F5366241A675C34EAF3 /* Pods_Credera_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776C2608FC32935341C444AC /* Pods_Credera_iOSTests.framework */; };
+		51EBCB0094D9A84B9476529F /* Pods_Credera_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776C2608FC32935341C444AC /* Pods_Credera_iOSTests.framework */; };
 		5910781621DD1FC60017CA21 /* MainSinglePageApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5910781521DD1FC60017CA21 /* MainSinglePageApp.storyboard */; };
 		5910781B21DD21900017CA21 /* NavigationController+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5910781A21DD21900017CA21 /* NavigationController+Transitions.swift */; };
 		5910781E21DD22770017CA21 /* MainSinglePageAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5910781D21DD22770017CA21 /* MainSinglePageAppViewController.swift */; };
@@ -27,13 +27,11 @@
 		5949D1AD219CBBAC006D2FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949D1AC219CBBAC006D2FF0 /* AppDelegate.swift */; };
 		5949D1B7219CBBAE006D2FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5949D1B6219CBBAE006D2FF0 /* Assets.xcassets */; };
 		5949D1BA219CBBAE006D2FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5949D1B8219CBBAE006D2FF0 /* LaunchScreen.storyboard */; };
-		5949D1C5219CBBAE006D2FF0 /* Credera_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949D1C4219CBBAE006D2FF0 /* Credera_iOSTests.swift */; };
 		5949D1D0219CBBAF006D2FF0 /* Credera_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949D1CF219CBBAF006D2FF0 /* Credera_iOSUITests.swift */; };
 		AFB6946022389FB2009473AE /* RequestCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6945F22389FB2009473AE /* RequestCaller.swift */; };
 		AFB694682238A4AC009473AE /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB694672238A4AC009473AE /* HttpRequest.swift */; };
 		AFB6946C22393EB0009473AE /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6946B22393EB0009473AE /* HttpResponse.swift */; };
 		AFB694712239F19A009473AE /* UserApiImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB694702239F19A009473AE /* UserApiImpl.swift */; };
-		AFB694732239F3EF009473AE /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB694722239F3EF009473AE /* URLRequest+Extension.swift */; };
 		AFB69478223A912F009473AE /* ApiProviderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB69477223A912F009473AE /* ApiProviderConfig.swift */; };
 		AFB6947C223AA9ED009473AE /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6947B223AA9ED009473AE /* UserService.swift */; };
 		AFB6947E223AAA0C009473AE /* UserServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6947D223AAA0C009473AE /* UserServiceImpl.swift */; };
@@ -41,23 +39,41 @@
 		AFB69485223AB4A6009473AE /* UserApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB69484223AB4A6009473AE /* UserApiModel.swift */; };
 		AFB6948A223AD56E009473AE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB69489223AD56E009473AE /* User.swift */; };
 		AFB6948C223AD709009473AE /* AddressApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6948B223AD709009473AE /* AddressApiModel.swift */; };
+		AFBD0D122241B03400123314 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD0D112241B03400123314 /* HttpError.swift */; };
+		AFBD0D132241B22B00123314 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD0D112241B03400123314 /* HttpError.swift */; };
+		AFBD0D152241BC1900123314 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD0D142241BC1900123314 /* NetworkError.swift */; };
+		AFBD0D162241BC3700123314 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD0D142241BC1900123314 /* NetworkError.swift */; };
+		AFBD0D182241D8A200123314 /* HttpRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD0D172241D8A200123314 /* HttpRequestTests.swift */; };
+		AFBD0D1D2242E4AA00123314 /* PhotosApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD0D1C2242E4AA00123314 /* PhotosApi.swift */; };
+		AFBD0D1E2242E4AA00123314 /* PhotosApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD0D1C2242E4AA00123314 /* PhotosApi.swift */; };
+		AFBD0D202242E55900123314 /* PhotoApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD0D1F2242E55900123314 /* PhotoApiModel.swift */; };
+		AFBD0D212242E55900123314 /* PhotoApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD0D1F2242E55900123314 /* PhotoApiModel.swift */; };
+		AFBD0D232242EB1F00123314 /* PhotosApiImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD0D222242EB1F00123314 /* PhotosApiImpl.swift */; };
+		AFBD0D242242EB1F00123314 /* PhotosApiImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD0D222242EB1F00123314 /* PhotosApiImpl.swift */; };
+		AFBD0D262242F4F300123314 /* UsersApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD0D252242F4F300123314 /* UsersApiRequest.swift */; };
+		AFBD0D272242F4F300123314 /* UsersApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD0D252242F4F300123314 /* UsersApiRequest.swift */; };
+		AFBD0D282242F7E100123314 /* ApiProviderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB69477223A912F009473AE /* ApiProviderConfig.swift */; };
 		AFD1E22A223A84C300131E4A /* NavigationIntermediate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD1E229223A84C300131E4A /* NavigationIntermediate.storyboard */; };
 		AFD1E22C223A84DF00131E4A /* NavigationIntermediateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1E22B223A84DF00131E4A /* NavigationIntermediateViewController.swift */; };
-		AFD1E22E223A870700131E4A /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1E22D223A870700131E4A /* NavigationHelper.swift */; };
+		AFD1E22E223A870700131E4A /* NavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1E22D223A870700131E4A /* NavigationProtocol.swift */; };
 		AFD1E234223AA50A00131E4A /* NavigationFinal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD1E233223AA50A00131E4A /* NavigationFinal.storyboard */; };
 		AFD1E236223AA53D00131E4A /* NavigationFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1E235223AA53D00131E4A /* NavigationFinalViewController.swift */; };
+		AFD8F72E223E070C00D9306F /* Credera_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD8F72D223E070C00D9306F /* Credera_iOSTests.swift */; };
+		AFD8F736223E082400D9306F /* RequestCallerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD8F735223E082400D9306F /* RequestCallerTests.swift */; };
+		AFD8F73A223E0A1C00D9306F /* RequestCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6945F22389FB2009473AE /* RequestCaller.swift */; };
+		AFD8F73B223E0A2200D9306F /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB694672238A4AC009473AE /* HttpRequest.swift */; };
 		D802FBAAD7A03585ABEB5D15 /* Pods_Credera_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9645AC57AFCE99B609B68B96 /* Pods_Credera_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5949D1C1219CBBAE006D2FF0 /* PBXContainerItemProxy */ = {
+		5949D1CC219CBBAF006D2FF0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5949D1A1219CBBAB006D2FF0 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5949D1A8219CBBAC006D2FF0;
 			remoteInfo = "Credera-iOS";
 		};
-		5949D1CC219CBBAF006D2FF0 /* PBXContainerItemProxy */ = {
+		AFD8F738223E09DE00D9306F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5949D1A1219CBBAB006D2FF0 /* Project object */;
 			proxyType = 1;
@@ -67,6 +83,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10F2AD85336E3BF45C01E1B3 /* Pods-Credera-iOSTests.release_qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSTests.release_qa.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSTests/Pods-Credera-iOSTests.release_qa.xcconfig"; sourceTree = "<group>"; };
+		14E5DCA8444542B540C0F562 /* Pods-Credera-iOSTests.debug_qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSTests.debug_qa.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSTests/Pods-Credera-iOSTests.debug_qa.xcconfig"; sourceTree = "<group>"; };
 		175E6B0EE4A1BBE1ECB067D8 /* Pods-Credera-iOS.debug_qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOS.debug_qa.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOS/Pods-Credera-iOS.debug_qa.xcconfig"; sourceTree = "<group>"; };
 		2C09A73AF9A76DA74B9904E1 /* Pods-Credera-iOSUITests.debug_qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSUITests.debug_qa.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSUITests/Pods-Credera-iOSUITests.debug_qa.xcconfig"; sourceTree = "<group>"; };
 		5910781521DD1FC60017CA21 /* MainSinglePageApp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainSinglePageApp.storyboard; sourceTree = "<group>"; };
@@ -89,26 +107,20 @@
 		5949D1B6219CBBAE006D2FF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5949D1B9219CBBAE006D2FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5949D1BB219CBBAE006D2FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5949D1C0219CBBAE006D2FF0 /* Credera-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Credera-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5949D1C4219CBBAE006D2FF0 /* Credera_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credera_iOSTests.swift; sourceTree = "<group>"; };
-		5949D1C6219CBBAE006D2FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5949D1CB219CBBAF006D2FF0 /* Credera-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Credera-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5949D1CF219CBBAF006D2FF0 /* Credera_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credera_iOSUITests.swift; sourceTree = "<group>"; };
 		5949D1D1219CBBAF006D2FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B3D69AE5004937C682D7497 /* Pods-Credera-iOS.release_qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOS.release_qa.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOS/Pods-Credera-iOS.release_qa.xcconfig"; sourceTree = "<group>"; };
 		6428362F40383B253C816DD2 /* Pods_Credera_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credera_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		72DC0B99DC63737EEAD05695 /* Pods-Credera-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSTests/Pods-Credera-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		7688C08926B91025DB83B7AB /* Pods-Credera-iOSTests.release_qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSTests.release_qa.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSTests/Pods-Credera-iOSTests.release_qa.xcconfig"; sourceTree = "<group>"; };
+		689CF97A4D34B5901F3665AC /* Pods-Credera-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSTests/Pods-Credera-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		776C2608FC32935341C444AC /* Pods_Credera_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credera_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE5EA2F7E2553C34C0ED366 /* Pods-Credera-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOS/Pods-Credera-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		9645AC57AFCE99B609B68B96 /* Pods_Credera_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credera_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0EA5606AFCE41D02ED02C68 /* Pods-Credera-iOSTests.debug_qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSTests.debug_qa.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSTests/Pods-Credera-iOSTests.debug_qa.xcconfig"; sourceTree = "<group>"; };
 		A550CE8A5977D50EB3D4A187 /* Pods-Credera-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOS/Pods-Credera-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		AFB6945F22389FB2009473AE /* RequestCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCaller.swift; sourceTree = "<group>"; };
 		AFB694672238A4AC009473AE /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		AFB6946B22393EB0009473AE /* HttpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
 		AFB694702239F19A009473AE /* UserApiImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiImpl.swift; sourceTree = "<group>"; };
-		AFB694722239F3EF009473AE /* URLRequest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extension.swift"; sourceTree = "<group>"; };
 		AFB69477223A912F009473AE /* ApiProviderConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProviderConfig.swift; sourceTree = "<group>"; };
 		AFB6947B223AA9ED009473AE /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		AFB6947D223AAA0C009473AE /* UserServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceImpl.swift; sourceTree = "<group>"; };
@@ -116,14 +128,25 @@
 		AFB69484223AB4A6009473AE /* UserApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiModel.swift; sourceTree = "<group>"; };
 		AFB69489223AD56E009473AE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AFB6948B223AD709009473AE /* AddressApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressApiModel.swift; sourceTree = "<group>"; };
+		AFBD0D112241B03400123314 /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
+		AFBD0D142241BC1900123314 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		AFBD0D172241D8A200123314 /* HttpRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestTests.swift; sourceTree = "<group>"; };
+		AFBD0D1C2242E4AA00123314 /* PhotosApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosApi.swift; sourceTree = "<group>"; };
+		AFBD0D1F2242E55900123314 /* PhotoApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoApiModel.swift; sourceTree = "<group>"; };
+		AFBD0D222242EB1F00123314 /* PhotosApiImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosApiImpl.swift; sourceTree = "<group>"; };
+		AFBD0D252242F4F300123314 /* UsersApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersApiRequest.swift; sourceTree = "<group>"; };
 		AFD1E229223A84C300131E4A /* NavigationIntermediate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationIntermediate.storyboard; sourceTree = "<group>"; };
 		AFD1E22B223A84DF00131E4A /* NavigationIntermediateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationIntermediateViewController.swift; sourceTree = "<group>"; };
-		AFD1E22D223A870700131E4A /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
+		AFD1E22D223A870700131E4A /* NavigationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationProtocol.swift; sourceTree = "<group>"; };
 		AFD1E233223AA50A00131E4A /* NavigationFinal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationFinal.storyboard; sourceTree = "<group>"; };
 		AFD1E235223AA53D00131E4A /* NavigationFinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationFinalViewController.swift; sourceTree = "<group>"; };
+		AFD8F72B223E070C00D9306F /* Credera-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Credera-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFD8F72D223E070C00D9306F /* Credera_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credera_iOSTests.swift; sourceTree = "<group>"; };
+		AFD8F72F223E070C00D9306F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFD8F735223E082400D9306F /* RequestCallerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCallerTests.swift; sourceTree = "<group>"; };
 		B099B06EF8A37A1DC08D3C01 /* Pods-Credera-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSUITests/Pods-Credera-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
-		CE79981894AA99E25E018793 /* Pods-Credera-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSTests/Pods-Credera-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D94C52EFC2A4126C62F2B683 /* Pods-Credera-iOSUITests.release_qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSUITests.release_qa.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSUITests/Pods-Credera-iOSUITests.release_qa.xcconfig"; sourceTree = "<group>"; };
+		E475FE564DC6E537E2D21637 /* Pods-Credera-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSTests/Pods-Credera-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FF250F3FCF3A682573AA52AA /* Pods-Credera-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSUITests/Pods-Credera-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,19 +159,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5949D1BD219CBBAE006D2FF0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E617F5366241A675C34EAF3 /* Pods_Credera_iOSTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5949D1C8219CBBAF006D2FF0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1C4D6B3DE27C746F5B67A025 /* Pods_Credera_iOSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFD8F728223E070C00D9306F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51EBCB0094D9A84B9476529F /* Pods_Credera_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				5949D1AB219CBBAC006D2FF0 /* Credera-iOS */,
-				5949D1C3219CBBAE006D2FF0 /* Credera-iOSTests */,
+				AFD8F72C223E070C00D9306F /* Credera-iOSTests */,
 				5949D1CE219CBBAF006D2FF0 /* Credera-iOSUITests */,
 				5949D1AA219CBBAC006D2FF0 /* Products */,
 				B1358001C96A900BEA8211A1 /* Pods */,
@@ -256,8 +279,8 @@
 			isa = PBXGroup;
 			children = (
 				5949D1A9219CBBAC006D2FF0 /* Credera-iOS.app */,
-				5949D1C0219CBBAE006D2FF0 /* Credera-iOSTests.xctest */,
 				5949D1CB219CBBAF006D2FF0 /* Credera-iOSUITests.xctest */,
+				AFD8F72B223E070C00D9306F /* Credera-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -277,15 +300,6 @@
 				598E173B219CDA81002AC3EC /* Storyboard */,
 			);
 			path = "Credera-iOS";
-			sourceTree = "<group>";
-		};
-		5949D1C3219CBBAE006D2FF0 /* Credera-iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				5949D1C4219CBBAE006D2FF0 /* Credera_iOSTests.swift */,
-				5949D1C6219CBBAE006D2FF0 /* Info.plist */,
-			);
-			path = "Credera-iOSTests";
 			sourceTree = "<group>";
 		};
 		5949D1CE219CBBAF006D2FF0 /* Credera-iOSUITests */ = {
@@ -349,7 +363,7 @@
 			isa = PBXGroup;
 			children = (
 				5910782D21DD29410017CA21 /* XibView.swift */,
-				AFD1E22D223A870700131E4A /* NavigationHelper.swift */,
+				AFD1E22D223A870700131E4A /* NavigationProtocol.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -377,7 +391,6 @@
 			children = (
 				AFB694642238A0BA009473AE /* Models */,
 				AFB6945F22389FB2009473AE /* RequestCaller.swift */,
-				AFB694722239F3EF009473AE /* URLRequest+Extension.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -397,6 +410,8 @@
 			children = (
 				AFB694672238A4AC009473AE /* HttpRequest.swift */,
 				AFB6946B22393EB0009473AE /* HttpResponse.swift */,
+				AFBD0D112241B03400123314 /* HttpError.swift */,
+				AFBD0D142241BC1900123314 /* NetworkError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -431,9 +446,11 @@
 		AFB694742239F7AE009473AE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AFBD0D252242F4F300123314 /* UsersApiRequest.swift */,
 				AFB69484223AB4A6009473AE /* UserApiModel.swift */,
 				AFB6948B223AD709009473AE /* AddressApiModel.swift */,
 				591823AC223B05110062ED0C /* GeoApiModel.swift */,
+				AFBD0D1F2242E55900123314 /* PhotoApiModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -451,6 +468,8 @@
 			children = (
 				AFB69481223AB37C009473AE /* UserApi.swift */,
 				AFB694702239F19A009473AE /* UserApiImpl.swift */,
+				AFBD0D1C2242E4AA00123314 /* PhotosApi.swift */,
+				AFBD0D222242EB1F00123314 /* PhotosApiImpl.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -489,21 +508,40 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		AFD8F72C223E070C00D9306F /* Credera-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFD8F737223E09A700D9306F /* Networking */,
+				AFD8F72D223E070C00D9306F /* Credera_iOSTests.swift */,
+				AFD8F72F223E070C00D9306F /* Info.plist */,
+			);
+			path = "Credera-iOSTests";
+			sourceTree = "<group>";
+		};
+		AFD8F737223E09A700D9306F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AFD8F735223E082400D9306F /* RequestCallerTests.swift */,
+				AFBD0D172241D8A200123314 /* HttpRequestTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		B1358001C96A900BEA8211A1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				A550CE8A5977D50EB3D4A187 /* Pods-Credera-iOS.debug.xcconfig */,
 				7DE5EA2F7E2553C34C0ED366 /* Pods-Credera-iOS.release.xcconfig */,
-				CE79981894AA99E25E018793 /* Pods-Credera-iOSTests.debug.xcconfig */,
-				72DC0B99DC63737EEAD05695 /* Pods-Credera-iOSTests.release.xcconfig */,
 				FF250F3FCF3A682573AA52AA /* Pods-Credera-iOSUITests.debug.xcconfig */,
 				B099B06EF8A37A1DC08D3C01 /* Pods-Credera-iOSUITests.release.xcconfig */,
 				175E6B0EE4A1BBE1ECB067D8 /* Pods-Credera-iOS.debug_qa.xcconfig */,
 				5B3D69AE5004937C682D7497 /* Pods-Credera-iOS.release_qa.xcconfig */,
-				A0EA5606AFCE41D02ED02C68 /* Pods-Credera-iOSTests.debug_qa.xcconfig */,
-				7688C08926B91025DB83B7AB /* Pods-Credera-iOSTests.release_qa.xcconfig */,
 				2C09A73AF9A76DA74B9904E1 /* Pods-Credera-iOSUITests.debug_qa.xcconfig */,
 				D94C52EFC2A4126C62F2B683 /* Pods-Credera-iOSUITests.release_qa.xcconfig */,
+				E475FE564DC6E537E2D21637 /* Pods-Credera-iOSTests.debug.xcconfig */,
+				14E5DCA8444542B540C0F562 /* Pods-Credera-iOSTests.debug_qa.xcconfig */,
+				689CF97A4D34B5901F3665AC /* Pods-Credera-iOSTests.release.xcconfig */,
+				10F2AD85336E3BF45C01E1B3 /* Pods-Credera-iOSTests.release_qa.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -531,25 +569,6 @@
 			productReference = 5949D1A9219CBBAC006D2FF0 /* Credera-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5949D1BF219CBBAE006D2FF0 /* Credera-iOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5949D1D7219CBBAF006D2FF0 /* Build configuration list for PBXNativeTarget "Credera-iOSTests" */;
-			buildPhases = (
-				6E47CAF03C248FD9B6EFE3C6 /* [CP] Check Pods Manifest.lock */,
-				5949D1BC219CBBAE006D2FF0 /* Sources */,
-				5949D1BD219CBBAE006D2FF0 /* Frameworks */,
-				5949D1BE219CBBAE006D2FF0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5949D1C2219CBBAE006D2FF0 /* PBXTargetDependency */,
-			);
-			name = "Credera-iOSTests";
-			productName = "Credera-iOSTests";
-			productReference = 5949D1C0219CBBAE006D2FF0 /* Credera-iOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		5949D1CA219CBBAF006D2FF0 /* Credera-iOSUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5949D1DA219CBBAF006D2FF0 /* Build configuration list for PBXNativeTarget "Credera-iOSUITests" */;
@@ -569,6 +588,26 @@
 			productReference = 5949D1CB219CBBAF006D2FF0 /* Credera-iOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		AFD8F72A223E070C00D9306F /* Credera-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFD8F730223E070C00D9306F /* Build configuration list for PBXNativeTarget "Credera-iOSTests" */;
+			buildPhases = (
+				3A309EA81006AB6EC8499C76 /* [CP] Check Pods Manifest.lock */,
+				AFD8F727223E070C00D9306F /* Sources */,
+				AFD8F728223E070C00D9306F /* Frameworks */,
+				AFD8F729223E070C00D9306F /* Resources */,
+				ACDD2742C1AE12317E94155F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFD8F739223E09DE00D9306F /* PBXTargetDependency */,
+			);
+			name = "Credera-iOSTests";
+			productName = "Credera-iOSTests";
+			productReference = AFD8F72B223E070C00D9306F /* Credera-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -582,13 +621,12 @@
 					5949D1A8219CBBAC006D2FF0 = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					5949D1BF219CBBAE006D2FF0 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 5949D1A8219CBBAC006D2FF0;
-					};
 					5949D1CA219CBBAF006D2FF0 = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 5949D1A8219CBBAC006D2FF0;
+					};
+					AFD8F72A223E070C00D9306F = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -606,7 +644,7 @@
 			projectRoot = "";
 			targets = (
 				5949D1A8219CBBAC006D2FF0 /* Credera-iOS */,
-				5949D1BF219CBBAE006D2FF0 /* Credera-iOSTests */,
+				AFD8F72A223E070C00D9306F /* Credera-iOSTests */,
 				5949D1CA219CBBAF006D2FF0 /* Credera-iOSUITests */,
 			);
 		};
@@ -629,14 +667,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5949D1BE219CBBAE006D2FF0 /* Resources */ = {
+		5949D1C9219CBBAF006D2FF0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5949D1C9219CBBAF006D2FF0 /* Resources */ = {
+		AFD8F729223E070C00D9306F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -646,6 +684,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3A309EA81006AB6EC8499C76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Credera-iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4316E69E40C1CE14E99108F4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -686,24 +746,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Credera-iOS/Pods-Credera-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6E47CAF03C248FD9B6EFE3C6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Credera-iOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A1A5965FA2FB6D51133D796E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -736,6 +778,32 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
+		ACDD2742C1AE12317E94155F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Credera-iOSTests/Pods-Credera-iOSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Credera-iOSTests/Pods-Credera-iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -744,8 +812,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFB6946C22393EB0009473AE /* HttpResponse.swift in Sources */,
+				AFBD0D1D2242E4AA00123314 /* PhotosApi.swift in Sources */,
+				AFBD0D152241BC1900123314 /* NetworkError.swift in Sources */,
 				5910783521DD2AC40017CA21 /* FirstViewController.swift in Sources */,
-				AFD1E22E223A870700131E4A /* NavigationHelper.swift in Sources */,
+				AFD1E22E223A870700131E4A /* NavigationProtocol.swift in Sources */,
+				AFBD0D262242F4F300123314 /* UsersApiRequest.swift in Sources */,
 				5910782A21DD28A40017CA21 /* AppHeaderView.swift in Sources */,
 				5910781E21DD22770017CA21 /* MainSinglePageAppViewController.swift in Sources */,
 				AFD1E236223AA53D00131E4A /* NavigationFinalViewController.swift in Sources */,
@@ -757,11 +828,13 @@
 				AFB69478223A912F009473AE /* ApiProviderConfig.swift in Sources */,
 				AFB694712239F19A009473AE /* UserApiImpl.swift in Sources */,
 				AFB6947E223AAA0C009473AE /* UserServiceImpl.swift in Sources */,
-				AFB694732239F3EF009473AE /* URLRequest+Extension.swift in Sources */,
 				AFB69485223AB4A6009473AE /* UserApiModel.swift in Sources */,
+				AFBD0D202242E55900123314 /* PhotoApiModel.swift in Sources */,
 				AFB6946022389FB2009473AE /* RequestCaller.swift in Sources */,
+				AFBD0D232242EB1F00123314 /* PhotosApiImpl.swift in Sources */,
 				5910782E21DD29410017CA21 /* XibView.swift in Sources */,
 				AFB6947C223AA9ED009473AE /* UserService.swift in Sources */,
+				AFBD0D122241B03400123314 /* HttpError.swift in Sources */,
 				5949D1AD219CBBAC006D2FF0 /* AppDelegate.swift in Sources */,
 				AFB694682238A4AC009473AE /* HttpRequest.swift in Sources */,
 				5910783A21DD2BD80017CA21 /* SecondViewController.swift in Sources */,
@@ -769,14 +842,6 @@
 				AFB6948C223AD709009473AE /* AddressApiModel.swift in Sources */,
 				AFB69482223AB37C009473AE /* UserApi.swift in Sources */,
 				AFB6948A223AD56E009473AE /* User.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5949D1BC219CBBAE006D2FF0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5949D1C5219CBBAE006D2FF0 /* Credera_iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -788,18 +853,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AFD8F727223E070C00D9306F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFD8F736223E082400D9306F /* RequestCallerTests.swift in Sources */,
+				AFD8F73B223E0A2200D9306F /* HttpRequest.swift in Sources */,
+				AFBD0D132241B22B00123314 /* HttpError.swift in Sources */,
+				AFBD0D162241BC3700123314 /* NetworkError.swift in Sources */,
+				AFBD0D182241D8A200123314 /* HttpRequestTests.swift in Sources */,
+				AFBD0D1E2242E4AA00123314 /* PhotosApi.swift in Sources */,
+				AFBD0D212242E55900123314 /* PhotoApiModel.swift in Sources */,
+				AFD8F72E223E070C00D9306F /* Credera_iOSTests.swift in Sources */,
+				AFD8F73A223E0A1C00D9306F /* RequestCaller.swift in Sources */,
+				AFBD0D282242F7E100123314 /* ApiProviderConfig.swift in Sources */,
+				AFBD0D242242EB1F00123314 /* PhotosApiImpl.swift in Sources */,
+				AFBD0D272242F4F300123314 /* UsersApiRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5949D1C2219CBBAE006D2FF0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5949D1A8219CBBAC006D2FF0 /* Credera-iOS */;
-			targetProxy = 5949D1C1219CBBAE006D2FF0 /* PBXContainerItemProxy */;
-		};
 		5949D1CD219CBBAF006D2FF0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5949D1A8219CBBAC006D2FF0 /* Credera-iOS */;
 			targetProxy = 5949D1CC219CBBAF006D2FF0 /* PBXContainerItemProxy */;
+		};
+		AFD8F739223E09DE00D9306F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5949D1A8219CBBAC006D2FF0 /* Credera-iOS */;
+			targetProxy = AFD8F738223E09DE00D9306F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -973,50 +1057,6 @@
 			};
 			name = Release;
 		};
-		5949D1D8219CBBAF006D2FF0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE79981894AA99E25E018793 /* Pods-Credera-iOSTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HPYS5PBF55;
-				INFOPLIST_FILE = "Credera-iOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.credera.mobile.Credera-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Credera-iOS.app/Credera-iOS";
-			};
-			name = Debug;
-		};
-		5949D1D9219CBBAF006D2FF0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72DC0B99DC63737EEAD05695 /* Pods-Credera-iOSTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HPYS5PBF55;
-				INFOPLIST_FILE = "Credera-iOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.credera.mobile.Credera-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Credera-iOS.app/Credera-iOS";
-			};
-			name = Release;
-		};
 		5949D1DB219CBBAF006D2FF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FF250F3FCF3A682573AA52AA /* Pods-Credera-iOSUITests.debug.xcconfig */;
@@ -1141,28 +1181,6 @@
 			};
 			name = Debug_QA;
 		};
-		59AAB19F21FF900B0089A057 /* Debug_QA */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0EA5606AFCE41D02ED02C68 /* Pods-Credera-iOSTests.debug_qa.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HPYS5PBF55;
-				INFOPLIST_FILE = "Credera-iOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.credera.mobile.Credera-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Credera-iOS.app/Credera-iOS";
-			};
-			name = Debug_QA;
-		};
 		59AAB1A021FF900B0089A057 /* Debug_QA */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2C09A73AF9A76DA74B9904E1 /* Pods-Credera-iOSUITests.debug_qa.xcconfig */;
@@ -1260,28 +1278,6 @@
 			};
 			name = Release_QA;
 		};
-		59AAB1A321FF900D0089A057 /* Release_QA */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7688C08926B91025DB83B7AB /* Pods-Credera-iOSTests.release_qa.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HPYS5PBF55;
-				INFOPLIST_FILE = "Credera-iOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.credera.mobile.Credera-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Credera-iOS.app/Credera-iOS";
-			};
-			name = Release_QA;
-		};
 		59AAB1A421FF900D0089A057 /* Release_QA */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D94C52EFC2A4126C62F2B683 /* Pods-Credera-iOSUITests.release_qa.xcconfig */;
@@ -1300,6 +1296,82 @@
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Credera-iOS";
+			};
+			name = Release_QA;
+		};
+		AFD8F731223E070C00D9306F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E475FE564DC6E537E2D21637 /* Pods-Credera-iOSTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Q9ZL326P2;
+				INFOPLIST_FILE = "Credera-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.credera.Credera-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFD8F732223E070C00D9306F /* Debug_QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14E5DCA8444542B540C0F562 /* Pods-Credera-iOSTests.debug_qa.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Q9ZL326P2;
+				INFOPLIST_FILE = "Credera-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.credera.Credera-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug_QA;
+		};
+		AFD8F733223E070C00D9306F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 689CF97A4D34B5901F3665AC /* Pods-Credera-iOSTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Q9ZL326P2;
+				INFOPLIST_FILE = "Credera-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.credera.Credera-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFD8F734223E070C00D9306F /* Release_QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10F2AD85336E3BF45C01E1B3 /* Pods-Credera-iOSTests.release_qa.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Q9ZL326P2;
+				INFOPLIST_FILE = "Credera-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.credera.Credera-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release_QA;
 		};
@@ -1328,17 +1400,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5949D1D7219CBBAF006D2FF0 /* Build configuration list for PBXNativeTarget "Credera-iOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5949D1D8219CBBAF006D2FF0 /* Debug */,
-				59AAB19F21FF900B0089A057 /* Debug_QA */,
-				5949D1D9219CBBAF006D2FF0 /* Release */,
-				59AAB1A321FF900D0089A057 /* Release_QA */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		5949D1DA219CBBAF006D2FF0 /* Build configuration list for PBXNativeTarget "Credera-iOSUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1346,6 +1407,17 @@
 				59AAB1A021FF900B0089A057 /* Debug_QA */,
 				5949D1DC219CBBAF006D2FF0 /* Release */,
 				59AAB1A421FF900D0089A057 /* Release_QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFD8F730223E070C00D9306F /* Build configuration list for PBXNativeTarget "Credera-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFD8F731223E070C00D9306F /* Debug */,
+				AFD8F732223E070C00D9306F /* Debug_QA */,
+				AFD8F733223E070C00D9306F /* Release */,
+				AFD8F734223E070C00D9306F /* Release_QA */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

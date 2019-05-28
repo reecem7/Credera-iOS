@@ -25,10 +25,23 @@ class Credera_iOSUITests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testNavigation() {
+        
+        let app = XCUIApplication()
+        XCTAssert(app.staticTexts["Navigation has not been completed"].exists)
+        
+        app.buttons["Navigation Example"].tap()
+        
+        let secondNavBtn = app.buttons["Navigate to final screen"]
+        XCTAssert(secondNavBtn.waitForExistence(timeout: 5))
+        secondNavBtn.tap()
+        
+        let thirdNavBtn = app.buttons["Navigate back to First VC"]
+        XCTAssert(thirdNavBtn.waitForExistence(timeout: 5))
+        thirdNavBtn.tap()
+        
+        XCTAssert(app.staticTexts["Navigation to Final VC has been completed"].exists)
+        
     }
-
 }

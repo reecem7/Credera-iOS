@@ -28,6 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AFD8F72A223E070C00D9306F"
+               BuildableName = "Credera-iOSTests.xctest"
+               BlueprintName = "Credera-iOSTests"
+               ReferencedContainer = "container:Credera-iOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5949D1CA219CBBAF006D2FF0"
+               BuildableName = "Credera-iOSUITests.xctest"
+               BlueprintName = "Credera-iOSUITests"
+               ReferencedContainer = "container:Credera-iOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

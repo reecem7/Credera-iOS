@@ -8,12 +8,17 @@
 
 import UIKit
 
-class NavigationIntermediateViewController: UIViewController, NavigationHelper {
+class NavigationIntermediateViewController: UIViewController, NavigationProtocol {
     
+    // Defines the type of data passed from the previous controller
+    typealias Model = String
+    typealias Delegate = NavigationCompletedProtocol
+    
+    // Required variables for the NavigationProtocol
     public class var storyboardName: String { return "NavigationIntermediate" }
     public class var viewControllerID: String { return "NavigationIntermediateViewController" }
-    
-    var passedInformation: String?
+
+    var model: String?
     weak var delegate: NavigationCompletedProtocol?
     
     @IBOutlet weak var passedInformationLabel: UILabel!
@@ -25,24 +30,24 @@ class NavigationIntermediateViewController: UIViewController, NavigationHelper {
         setupUI()
     }
     
-    public static func getInstance(passedInformation: String, delegate: NavigationCompletedProtocol) -> UIViewController {
-        guard let navigationIntermediateController = getInstance() as? NavigationIntermediateViewController else {
-            return UIViewController()
-        }
+    // Required method for the NavigationProtocol
+    public static func getInstance(model: String, delegate: NavigationCompletedProtocol?) -> Self {
         
-        navigationIntermediateController.passedInformation = passedInformation
+        let navigationIntermediateController = getInstance()
+        
+        navigationIntermediateController.model = model
         navigationIntermediateController.delegate = delegate
         
         return navigationIntermediateController
     }
     
     func setupUI() {
-        passedInformationLabel.text = passedInformation
+        passedInformationLabel.text = model
     }
     
     @IBAction func navToFinalScreenClicked(_ sender: Any) {
-        if let passedString = passedInformation, let navigationCompletedDelegate = delegate {
-            let navigationFinalVC = NavigationFinalViewController.getInstance(passedInformation: passedString, delegate: navigationCompletedDelegate)
+        if let passedString = model, let navigationCompletedDelegate = delegate {
+            let navigationFinalVC = NavigationFinalViewController.getInstance(model: passedString, delegate: navigationCompletedDelegate)
             navigationController?.pushViewController(navigationFinalVC, animated: true)
         }
     }
